@@ -1,88 +1,26 @@
 {
-  "version": "v2",
-  "description": "GA gene configuration \u2014 8 dimensions for enhanced optimization",
-  "GENES": [
-    {
-      "name": "min_score",
-      "lo": 15,
-      "hi": 55,
-      "step": 1
-    },
-    {
-      "name": "sl_pct",
-      "lo": 5.0,
-      "hi": 15.0,
-      "step": 0.5
-    },
-    {
-      "name": "tp_pct",
-      "lo": 6.0,
-      "hi": 25.0,
-      "step": 0.5
-    },
-    {
-      "name": "min_vol_m",
-      "lo": 1,
-      "hi": 15,
-      "step": 1
-    },
-    {
-      "name": "momentum_window",
-      "lo": 2,
-      "hi": 12,
-      "step": 1
-    },
-    {
-      "name": "cooldown_ticks",
-      "lo": 1,
-      "hi": 8,
-      "step": 1
-    },
-    {
-      "name": "margin_min",
-      "lo": 5.0,
-      "hi": 20.0,
-      "step": 1.0
-    },
-    {
-      "name": "direction_penalty",
-      "lo": 0.0,
-      "hi": 2.0,
-      "step": 0.25
-    }
-  ],
-  "GA_config": {
-    "POP": 128,
-    "GENS": 150,
-    "ELITE": 6,
-    "TOURN": 5,
-    "MUT_RATE": 0.3,
-    "CROSS_RATE": 0.7,
-    "SEED": 42,
-    "DIVERSITY_RESTART_TRIGGER": 25,
-    "DIVERSITY_RESTART_KEEP": 6,
-    "SYMBOLS": 200,
-    "USE_ALL_CACHED": true
-  },
   "best_result": {
-    "pnl": 193.7,
-    "wr": 77,
-    "n": 30,
     "params": {
-      "min_score": 17,
-      "sl_pct": 12.0,
-      "tp_pct": 7.5,
-      "min_vol_m": 1,
-      "momentum_window": 2,
-      "cooldown_ticks": 2,
-      "margin_min": 20.0,
-      "direction_penalty": 1.5
+      "min_score": 26,
+      "min_vol_m": 4.735580079025535,
+      "sl_pct": 13.327121193472909,
+      "tp_pct": 16.255094442359407,
+      "cooldown_ticks": 1,
+      "momentum_window": 1,
+      "direction_penalty": 1.2739819916762822,
+      "margin_min": 18.73234828421061
     },
-    "sharpe": 0.761,
-    "max_drawdown": 0.058,
-    "profit_factor": 5.02,
-    "rr_ratio": 1.53,
-    "found_gen": 38,
-    "fitness": 106.36
+    "total_pnl": 161.1048,
+    "win_rate": 0.7059,
+    "max_dd": 16.63,
+    "sharpe": 0.5296,
+    "n_trades": 17,
+    "timestamp": "2026-04-16T00:00:57.343815"
+  },
+  "optuna_study": {
+    "n_trials": 200,
+    "elapsed_s": 61,
+    "best_value": 160.280359,
+    "n_completed": 200
   }
 }
