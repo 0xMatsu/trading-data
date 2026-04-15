@@ -1,0 +1,88 @@
+{
+  "version": "v2",
+  "description": "GA gene configuration \u2014 8 dimensions for enhanced optimization",
+  "GENES": [
+    {
+      "name": "min_score",
+      "lo": 15,
+      "hi": 55,
+      "step": 1
+    },
+    {
+      "name": "sl_pct",
+      "lo": 5.0,
+      "hi": 15.0,
+      "step": 0.5
+    },
+    {
+      "name": "tp_pct",
+      "lo": 6.0,
+      "hi": 25.0,
+      "step": 0.5
+    },
+    {
+      "name": "min_vol_m",
+      "lo": 1,
+      "hi": 15,
+      "step": 1
+    },
+    {
+      "name": "momentum_window",
+      "lo": 2,
+      "hi": 12,
+      "step": 1
+    },
+    {
+      "name": "cooldown_ticks",
+      "lo": 1,
+      "hi": 8,
+      "step": 1
+    },
+    {
+      "name": "margin_min",
+      "lo": 5.0,
+      "hi": 20.0,
+      "step": 1.0
+    },
+    {
+      "name": "direction_penalty",
+      "lo": 0.0,
+      "hi": 2.0,
+      "step": 0.25
+    }
+  ],
+  "GA_config": {
+    "POP": 128,
+    "GENS": 150,
+    "ELITE": 6,
+    "TOURN": 5,
+    "MUT_RATE": 0.3,
+    "CROSS_RATE": 0.7,
+    "SEED": 42,
+    "DIVERSITY_RESTART_TRIGGER": 25,
+    "DIVERSITY_RESTART_KEEP": 6,
+    "SYMBOLS": 200,
+    "USE_ALL_CACHED": true
+  },
+  "best_result": {
+    "pnl": 193.7,
+    "wr": 77,
+    "n": 30,
+    "params": {
+      "min_score": 17,
+      "sl_pct": 12.0,
+      "tp_pct": 7.5,
+      "min_vol_m": 1,
+      "momentum_window": 2,
+      "cooldown_ticks": 2,
+      "margin_min": 20.0,
+      "direction_penalty": 1.5
+    },
+    "sharpe": 0.761,
+    "max_drawdown": 0.058,
+    "profit_factor": 5.02,
+    "rr_ratio": 1.53,
+    "found_gen": 38,
+    "fitness": 106.36
+  }
+}

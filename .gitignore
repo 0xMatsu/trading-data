@@ -1,0 +1,11 @@
+# Local runtime files (auto-generated)
+cooldown.json
+position_manager_state.json
+futures_strategy.json
+
+# Large cached analysis (re-generated as needed)
+demon_deep_data.json
+demon_analysis.json
+price_change_stats.json
+*.tmp
+*.log

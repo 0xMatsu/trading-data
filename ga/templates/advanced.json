@@ -1,0 +1,35 @@
+{
+  "version": "v2",
+  "description": "进阶模板（8 参数）— v2 最佳结果已记录",
+  "GENES": [
+    { "name": "min_score",        "lo": 15,   "hi": 55,  "step": 1    },
+    { "name": "sl_pct",           "lo": 5.0,  "hi": 15.0,"step": 0.5  },
+    { "name": "tp_pct",           "lo": 6.0,  "hi": 25.0,"step": 0.5  },
+    { "name": "min_vol_m",        "lo": 1,    "hi": 15,  "step": 1    },
+    { "name": "momentum_window",  "lo": 2,    "hi": 12,  "step": 1    },
+    { "name": "cooldown_ticks",   "lo": 1,    "hi": 8,   "step": 1    },
+    { "name": "margin_min",       "lo": 5.0,  "hi": 20.0,"step": 1.0  },
+    { "name": "direction_penalty", "lo": 0.0, "hi": 2.0, "step": 0.25  }
+  ],
+  "best_result": {
+    "pnl": 259.59,
+    "wr": 81,
+    "n": 36,
+    "params": {
+      "min_score": 15,
+      "sl_pct": 12.0,
+      "tp_pct": 8.5,
+      "min_vol_m": 10,
+      "momentum_window": 2,
+      "cooldown_ticks": 1,
+      "margin_min": 20.0,
+      "direction_penalty": 0.75
+    },
+    "sharpe": 0.707,
+    "max_drawdown": 0.085,
+    "profit_factor": 4.10,
+    "rr_ratio": 0.99,
+    "found_gen": 114,
+    "date": "2025-04-16"
+  }
+}
