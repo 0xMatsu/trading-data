@@ -1,26 +1,86 @@
 {
   "best_result": {
+    "interval": "15m",
     "params": {
-      "min_score": 23,
-      "min_vol_m": 1.9432898948103334,
-      "sl_pct": 8.01769849570823,
-      "tp_pct": 6.417335909094549,
-      "cooldown_ticks": 2,
-      "momentum_window": 1,
-      "direction_penalty": 2.672477934149333,
-      "margin_min": 19.969310802111263
+      "min_score": 34,
+      "min_vol_m": 0.7385619305276476,
+      "sl_pct": 15.122358257652886,
+      "tp_pct": 5.001850911716808,
+      "cooldown_ticks": 3,
+      "freq_cap_hours": 8,
+      "freq_cap_max": 10,
+      "momentum_window": 0,
+      "direction_penalty": 3.7209524131165406e-05,
+      "margin_min": 19.06498478298312
     },
-    "total_pnl": 138.9003,
-    "win_rate": 0.7636,
-    "max_dd": 7.01,
-    "sharpe": 0.5213,
-    "n_trades": 55,
-    "timestamp": "2026-04-16T11:59:09.157644"
+    "total_pnl": 85.5246,
+    "win_rate": 0.8846,
+    "max_dd": 3.41,
+    "sharpe": 1.3021,
+    "n_trades": 26,
+    "timestamp": "2026-04-16T15:47:31.246982"
   },
   "optuna_study": {
     "n_trials": 200,
-    "elapsed_s": 151,
-    "best_value": 138.55743599999997,
+    "elapsed_s": 72,
+    "best_value": 85.36294600000001,
     "n_completed": 200
+  },
+  "history": {
+    "5m_2026-04-16": {
+      "params": {
+        "min_score": 33,
+        "sl_pct": 9.63,
+        "tp_pct": 19.43,
+        "cooldown_ticks": 7,
+        "momentum_window": 0,
+        "direction_penalty": 0.73,
+        "margin_min": 19.69,
+        "min_vol_m": 1.67
+      },
+      "pnl": 91.6,
+      "wr": 0.818,
+      "sharpe": 0.95,
+      "n_trades": 11,
+      "note": "Good quality but too few trades (3d window). 15m preferred."
+    },
+    "15m_20260416_1527": {
+      "params": {
+        "min_score": 32,
+        "min_vol_m": 0.665427104555465,
+        "sl_pct": 14.154237318154077,
+        "tp_pct": 15.145063181290688,
+        "cooldown_ticks": 5,
+        "momentum_window": 1,
+        "direction_penalty": 1.1383260308990892,
+        "margin_min": 19.9686311377232
+      },
+      "total_pnl": 72.4499,
+      "win_rate": 0.6923,
+      "max_dd": 6.39,
+      "sharpe": 0.6439,
+      "n_trades": 13,
+      "interval": "15m"
+    },
+    "15m_20260416_1547": {
+      "params": {
+        "min_score": 34,
+        "min_vol_m": 0.7385619305276476,
+        "sl_pct": 15.122358257652886,
+        "tp_pct": 5.001850911716808,
+        "cooldown_ticks": 3,
+        "momentum_window": 0,
+        "direction_penalty": 3.7209524131165406e-05,
+        "margin_min": 19.06498478298312,
+        "freq_cap_hours": 8,
+        "freq_cap_max": 10
+      },
+      "total_pnl": 85.5246,
+      "win_rate": 0.8846,
+      "max_dd": 3.41,
+      "sharpe": 1.3021,
+      "n_trades": 26,
+      "interval": "15m"
+    }
   }
 }

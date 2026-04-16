@@ -1,0 +1,27 @@
+{
+  "LDO": {
+    "hwm": 0.39637,
+    "partial_closed": false,
+    "open_ts": 1776336647.0671148
+  },
+  "APT": {
+    "hwm": 0.9244,
+    "partial_closed": false,
+    "open_ts": 1776336647.0671265
+  },
+  "DOT": {
+    "hwm": 1.26015,
+    "partial_closed": false,
+    "open_ts": 1776336647.0671322
+  },
+  "ORDI": {
+    "hwm": 5.099,
+    "partial_closed": false,
+    "open_ts": 1776336647.0671358
+  },
+  "GRIFFAIN": {
+    "hwm": 0.013696,
+    "partial_closed": false,
+    "open_ts": 1776336647.067138
+  }
+}
