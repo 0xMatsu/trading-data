@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matsu Trading Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; }
+  
+  /* Password Gate */
+  #gate {
+    position: fixed; inset: 0; background: #0d1117; z-index: 999;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #gate.hidden { display: none; }
+  #gate-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 40px; text-align: center; }
+  #gate-box h2 { color: #58a6ff; margin-bottom: 20px; }
+  #gate-box input { background: #0d1117; border: 1px solid #30363d; border-radius: 6px; color: #e6edf3; padding: 10px 16px; width: 240px; font-size: 14px; }
+  #gate-box button { background: #238636; border: none; border-radius: 6px; color: white; padding: 10px 20px; margin-top: 12px; cursor: pointer; font-size: 14px; }
+  #gate-box button:hover { background: #2ea043; }
+  #gate-error { color: #f85149; margin-top: 10px; font-size: 13px; display: none; }
+
+  /* Layout */
+  header { background: #161b22; border-bottom: 1px solid #30363d; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 18px; color: #58a6ff; }
+  header .badge { background: #21262d; border: 1px solid #30363d; border-radius: 20px; padding: 4px 12px; font-size: 12px; color: #8b949e; }
+  
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 24px 32px; }
+  .stat-card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 20px; }
+  .stat-card .label { font-size: 12px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-card .value { font-size: 28px; font-weight: 700; margin-top: 8px; }
+  .stat-card .value.green { color: #3fb950; }
+  .stat-card .value.red { color: #f85149; }
+  .stat-card .value.yellow { color: #d29922; }
+  .stat-card .sub { font-size: 12px; color: #8b949e; margin-top: 4px; }
+
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 0 32px 24px; }
+  .chart-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 20px; }
+  .chart-box h3 { font-size: 14px; color: #8b949e; margin-bottom: 16px; }
+  .chart-box canvas { max-height: 260px; }
+
+  .tables { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 0 32px 32px; }
+  .table-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; overflow: hidden; }
+  .table-box h3 { font-size: 14px; color: #8b949e; padding: 16px 20px 12px; border-bottom: 1px solid #30363d; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; font-size: 11px; color: #8b949e; text-transform: uppercase; padding: 10px 20px; border-bottom: 1px solid #30363d; }
+  td { padding: 10px 20px; font-size: 13px; border-bottom: 1px solid #21262d; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: #1c2128; }
+  .pnl-pos { color: #3fb950; }
+  .pnl-neg { color: #f85149; }
+  .tag { display: inline-block; border-radius: 4px; padding: 2px 6px; font-size: 11px; }
+  .tag-long { background: rgba(63,185,80,0.15); color: #3fb950; }
+  .tag-short { background: rgba(248,81,73,0.15); color: #f85149; }
+  .tag-neutral { background: rgba(210,153,34,0.15); color: #d29922; }
+
+  footer { text-align: center; color: #484f58; font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+
+<!-- Password Gate -->
+<div id="gate">
+  <div id="gate-box">
+    <h2>Matsu Trading Dashboard</h2>
+    <input type="password" id="gate-input" placeholder="Enter password" onkeydown="if(event.key==='Enter')checkPass()">
+    <br><button onclick="checkPass()">Access</button>
+    <div id="gate-error">Incorrect password</div>
+  </div>
+</div>
+
+<header>
+  <h1>Trading Dashboard</h1>
+  <span class="badge">Binance Futures · Demon Strategy</span>
+</header>
+
+<!-- KPI Cards -->
+<div class="grid">
+  <div class="stat-card">
+    <div class="label">Total Realized PnL</div>
+    <div class="value red" id="kpi-pnl">—</div>
+    <div class="sub" id="kpi-pnl-sub">12 closed trades</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Win Rate</div>
+    <div class="value yellow" id="kpi-winrate">—</div>
+    <div class="sub" id="kpi-wr-sub">avg win $2.42 / avg loss -$4.73</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Total Trades</div>
+    <div class="value" id="kpi-trades">—</div>
+    <div class="sub" id="kpi-trades-sub">67 opens / 12 closes</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Active Positions</div>
+    <div class="value" id="kpi-positions">—</div>
+    <div class="sub">23 symbols · $245 balance</div>
+  </div>
+</div>
+
+<!-- Charts -->
+<div class="charts">
+  <div class="chart-box">
+    <h3>Daily P&L ($)</h3>
+    <canvas id="dailyChart"></canvas>
+  </div>
+  <div class="chart-box">
+    <h3>Symbol P&L Ranking</h3>
+    <canvas id="symbolChart"></canvas>
+  </div>
+</div>
+<div class="charts" style="padding-top: 0;">
+  <div class="chart-box">
+    <h3>Win / Loss Distribution</h3>
+    <canvas id="wlChart"></canvas>
+  </div>
+  <div class="chart-box">
+    <h3>PnL % Distribution</h3>
+    <canvas id="pnlPctChart"></canvas>
+  </div>
+</div>
+
+<!-- Tables -->
+<div class="tables">
+  <div class="table-box">
+    <h3>Closed Trades</h3>
+    <table>
+      <thead><tr><th>Time</th><th>Symbol</th><th>Dir</th><th>Entry</th><th>Exit</th><th>PnL</th><th>PnL%</th></tr></thead>
+      <tbody id="trade-table"></tbody>
+    </table>
+  </div>
+  <div class="table-box">
+    <h3>Symbol Summary</h3>
+    <table>
+      <thead><tr><th>Symbol</th><th>PnL</th><th>Wins</th><th>Losses</th><th>Win Rate</th></tr></thead>
+      <tbody id="symbol-table"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>Auto-updated · data from ~/trading-data/futures_trades.jsonl</footer>
+
+<script>
+const PASS = 'Matsu2026'; // Change this
+
+function checkPass() {
+  const input = document.getElementById('gate-input').value;
+  if (input === PASS) {
+    document.getElementById('gate').classList.add('hidden');
+    initCharts();
+  } else {
+    document.getElementById('gate-error').style.display = 'block';
+  }
+}
+
+// ─── Static Data (embedded from futures_trades.jsonl) ───
+
+const tradeLog = [{"symbol": "RAVEUSDT", "side": "SELL", "entry": 15.5422383, "exit": 0.0, "pnl": -0.64, "pnl_pct": -3.4, "reason": "signal_drop_OI上升但价跌 → 主力做空", "time": "2026-04-15 12:23:16"}, {"symbol": "RAVEUSDT", "side": "SELL", "entry": 15.03202, "exit": 12.87997, "pnl": -10.76, "pnl_pct": -57.3, "reason": "near_liquidation", "time": "2026-04-15 15:31:29"}, {"symbol": "ENJUSDT", "side": "SELL", "entry": 0.09545, "exit": 0.08993, "pnl": -2.04, "pnl_pct": -9.4, "reason": "signal_drop", "time": "2026-04-15 17:06:50"}, {"symbol": "INUSDT", "side": "SELL", "entry": 0.01489, "exit": 0.01375, "pnl": -2.72, "pnl_pct": -10.8, "reason": "signal_drop", "time": "2026-04-15 17:41:50"}, {"symbol": "MYXUSDT", "side": "SELL", "entry": 0.06495, "exit": 0.055, "pnl": -5.37, "pnl_pct": -15.3, "reason": "signal_drop", "time": "2026-04-15 17:46:20"}, {"symbol": "龙虾USDT", "side": "SELL", "entry": 0.00298, "exit": 0.0029, "pnl": 0.39, "pnl_pct": 6.4, "reason": "signal_drop", "time": "2026-04-15 18:22:32"}, {"symbol": "ONUSDT", "side": "SELL", "entry": 1.0378, "exit": 0.8965, "pnl": -4.09, "pnl_pct": -13.6, "reason": "signal_drop", "time": "2026-04-15 18:43:20"}, {"symbol": "COAIUSDT", "side": "SELL", "entry": 0.063, "exit": 0.051, "pnl": -4.52, "pnl_pct": -19.0, "reason": "signal_drop", "time": "2026-04-15 18:51:41"}, {"symbol": "龙虾USDT", "side": "SELL", "entry": 0.003, "exit": 0.0031, "pnl": 0.38, "pnl_pct": 7.2, "reason": "signal_drop", "time": "2026-04-15 19:01:12"}, {"symbol": "ARIAUSDT", "side": "BUY", "entry": 0.0935, "exit": 0.0892, "pnl": -1.55, "pnl_pct": -7.6, "reason": "signal_drop", "time": "2026-04-15 22:32:14"}, {"symbol": "ARIAUSDT", "side": "BUY", "entry": 0.0931, "exit": 0.088, "pnl": -2.99, "pnl_pct": -9.2, "reason": "signal_drop", "time": "2026-04-15 22:36:01"}, {"symbol": "OGUSDT", "side": "SELL", "entry": 0.029, "exit": 0.024, "pnl": -2.5, "pnl_pct": -17.2, "reason": "signal_drop", "time": "2026-04-15 22:55:13"}];
+
+const symbolPnl = [{"symbol": "龙虾USDT", "pnl": 0.77, "wins": 2, "losses": 0}, {"symbol": "ENJUSDT", "pnl": -2.04, "wins": 0, "losses": 1}, {"symbol": "INUSDT", "pnl": -2.72, "wins": 0, "losses": 1}, {"symbol": "ONUSDT", "pnl": -4.09, "wins": 0, "losses": 1}, {"symbol": "COAIUSDT", "pnl": -4.52, "wins": 0, "losses": 1}, {"symbol": "MYXUSDT", "pnl": -5.37, "wins": 0, "losses": 1}, {"symbol": "ARIAUSDT", "pnl": -4.54, "wins": 0, "losses": 2}, {"symbol": "RAVEUSDT", "pnl": -11.4, "wins": 0, "losses": 2}, {"symbol": "OGUSDT", "pnl": -2.5, "wins": 0, "losses": 1}];
+
+const dailyPnl = {"2026-04-15": -35.34};
+
+const activePositions = [{"symbol": "BLESSUSDT", "side": "SHORT", "entry": 0.01114, "qty": 4468, "margin": 16.56, "time": "2026-04-16 07:27"}, {"symbol": "CTSIUSDT", "side": "LONG", "entry": 0.0426, "qty": 1236, "margin": 17.55, "time": "2026-04-16 05:12"}, {"symbol": "RAVEUSDT", "side": "SHORT", "entry": 10.812, "qty": 5, "margin": 16.25, "time": "2026-04-16 07:47"}, {"symbol": "ORDIUSDT", "side": "LONG", "entry": 3.607, "qty": 15.1, "margin": 27.61, "time": "2026-04-16 09:35"}, {"symbol": "ARIAUSDT", "side": "SHORT", "entry": 0.0931, "qty": 517, "margin": 15.76, "time": "2026-04-16 09:35"}, {"symbol": "BLURUSDT", "side": "LONG", "entry": 0.02768, "qty": 1942, "margin": 18.34, "time": "2026-04-16 09:35"}, {"symbol": "BRUSDT", "side": "LONG", "entry": 0.238, "qty": 204, "margin": 16.06, "time": "2026-04-16 08:09"}, {"symbol": "BASEDUSDT", "side": "LONG", "entry": 0.08832, "qty": 545, "margin": 16.62, "time": "2026-04-16 05:13"}, {"symbol": "ALCHUSDT", "side": "LONG", "entry": 0.096, "qty": 516, "margin": 16.5, "time": "2026-04-16 07:17"}, {"symbol": "ENJUSDT", "side": "LONG", "entry": 0.08756, "qty": 627, "margin": 18.29, "time": "2026-04-16 02:22"}, {"symbol": "LYNUSDT", "side": "LONG", "entry": 0.07652, "qty": 718, "margin": 18.44, "time": "2026-04-16 00:19"}, {"symbol": "BIOUSDT", "side": "LONG", "entry": 0.02563, "qty": 1910, "margin": 16.31, "time": "2026-04-16 00:20"}];
+
+// ─── KPIs ───
+const totalPnl = tradeLog.reduce((s, t) => s + t.pnl, 0);
+const wins = tradeLog.filter(t => t.pnl > 0).length;
+const losses = tradeLog.filter(t => t.pnl < 0).length;
+const wr = wins / tradeLog.length * 100;
+const avgWin = tradeLog.filter(t => t.pnl > 0).reduce((s, t) => s + t.pnl, 0) / wins || 0;
+const avgLoss = tradeLog.filter(t => t.pnl < 0).reduce((s, t) => s + t.pnl, 0) / losses || 0;
+const totalMargin = activePositions.reduce((s, p) => s + p.margin, 0);
+
+document.getElementById('kpi-pnl').textContent = '$' + totalPnl.toFixed(2);
+document.getElementById('kpi-pnl').className = 'value ' + (totalPnl >= 0 ? 'green' : 'red');
+document.getElementById('kpi-winrate').textContent = wr.toFixed(1) + '%';
+document.getElementById('kpi-winrate').className = 'value ' + (wr >= 50 ? 'green' : 'red');
+document.getElementById('kpi-trades').textContent = tradeLog.length;
+document.getElementById('kpi-positions').textContent = activePositions.length;
+
+// ─── Charts ───
+function initCharts() {
+  Chart.defaults.color = '#8b949e';
+  Chart.defaults.borderColor = '#21262d';
+
+  // Daily P&L
+  const dailyCtx = document.getElementById('dailyChart').getContext('2d');
+  const dailyDates = Object.keys(dailyPnl);
+  const dailyValues = Object.values(dailyPnl);
+  new Chart(dailyCtx, {
+    type: 'bar',
+    data: {
+      labels: dailyDates,
+      datasets: [{
+        data: dailyValues,
+        backgroundColor: dailyValues.map(v => v >= 0 ? 'rgba(63,185,80,0.7)' : 'rgba(248,81,73,0.7)'),
+        borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#21262d' } },
+        y: { grid: { color: '#21262d' }, ticks: { callback: v => '$' + v.toFixed(0) } }
+      }
+    }
+  });
+
+  // Symbol P&L
+  const symCtx = document.getElementById('symbolChart').getContext('2d');
+  new Chart(symCtx, {
+    type: 'bar',
+    data: {
+      labels: symbolPnl.map(s => s.symbol),
+      datasets: [{
+        label: 'PnL',
+        data: symbolPnl.map(s => s.pnl),
+        backgroundColor: symbolPnl.map(s => s.pnl >= 0 ? 'rgba(63,185,80,0.7)' : 'rgba(248,81,73,0.7)'),
+        borderRadius: 4
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#21262d' }, ticks: { callback: v => '$' + v.toFixed(0) } },
+        y: { grid: { display: false } }
+      }
+    }
+  });
+
+  // Win / Loss pie
+  const wlCtx = document.getElementById('wlChart').getContext('2d');
+  new Chart(wlCtx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Wins (' + wins + ')', 'Losses (' + losses + ')'],
+      datasets: [{
+        data: [wins, losses],
+        backgroundColor: ['rgba(63,185,80,0.8)', 'rgba(248,81,73,0.8)'],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom' }
+      },
+      cutout: '65%'
+    }
+  });
+
+  // PnL % distribution
+  const pnlPctCtx = document.getElementById('pnlPctChart').getContext('2d');
+  const bins = [-60,-50,-40,-30,-20,-10,0,10,20,30,40,50];
+  const counts = new Array(bins.length).fill(0);
+  tradeLog.forEach(t => {
+    const pct = t.pnl_pct;
+    for (let i = 0; i < bins.length - 1; i++) {
+      if (pct >= bins[i] && pct < bins[i+1]) { counts[i]++; break; }
+    }
+    if (pct >= 50) counts[bins.length-1]++;
+  });
+  new Chart(pnlPctCtx, {
+    type: 'bar',
+    data: {
+      labels: bins.map((b, i) => i < bins.length-1 ? `${b}–${bins[i+1]}%` : `>${b}%`),
+      datasets: [{ data: counts, backgroundColor: 'rgba(88,166,255,0.6)', borderRadius: 4 }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+        y: { grid: { color: '#21262d' }, ticks: { stepSize: 1 } }
+      }
+    }
+  });
+}
+
+// ─── Tables ───
+const tradeTable = document.getElementById('trade-table');
+tradeLog.forEach(t => {
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td>${t.time.slice(5)}</td>
+    <td>${t.symbol}</td>
+    <td><span class="tag tag-${t.side === 'BUY' ? 'long' : 'short'}">${t.side === 'BUY' ? 'LONG' : 'SHORT'}</span></td>
+    <td>${t.entry}</td>
+    <td>${t.exit > 0 ? t.exit.toFixed(4) : '—'}</td>
+    <td class="${t.pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${t.pnl >= 0 ? '+' : ''}$${t.pnl.toFixed(2)}</td>
+    <td class="${t.pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${t.pnl_pct >= 0 ? '+' : ''}${t.pnl_pct}%</td>
+  `;
+  tradeTable.appendChild(row);
+});
+
+const symbolTable = document.getElementById('symbol-table');
+symbolPnl.forEach(s => {
+  const wr = s.wins + s.losses > 0 ? (s.wins / (s.wins + s.losses) * 100).toFixed(0) + '%' : '—';
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td>${s.symbol}</td>
+    <td class="${s.pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${s.pnl >= 0 ? '+' : ''}$${s.pnl.toFixed(2)}</td>
+    <td class="pnl-pos">${s.wins}</td>
+    <td class="pnl-neg">${s.losses}</td>
+    <td>${wr}</td>
+  `;
+  symbolTable.appendChild(row);
+});
+</script>
+</body>
+</html>
