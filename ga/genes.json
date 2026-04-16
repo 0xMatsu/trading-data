@@ -1,26 +1,26 @@
 {
   "best_result": {
     "params": {
-      "min_score": 24,
-      "min_vol_m": 4.059000967389919,
-      "sl_pct": 12.326091696277528,
-      "tp_pct": 11.529360551812898,
+      "min_score": 23,
+      "min_vol_m": 1.9432898948103334,
+      "sl_pct": 8.01769849570823,
+      "tp_pct": 6.417335909094549,
       "cooldown_ticks": 2,
       "momentum_window": 1,
-      "direction_penalty": 1.2383912767706478,
-      "margin_min": 17.157973049679157
+      "direction_penalty": 2.672477934149333,
+      "margin_min": 19.969310802111263
     },
-    "total_pnl": 107.5723,
-    "win_rate": 0.75,
-    "max_dd": 7.35,
-    "sharpe": 0.576,
-    "n_trades": 28,
-    "timestamp": "2026-04-16T02:51:31.124238"
+    "total_pnl": 138.9003,
+    "win_rate": 0.7636,
+    "max_dd": 7.01,
+    "sharpe": 0.5213,
+    "n_trades": 55,
+    "timestamp": "2026-04-16T11:59:09.157644"
   },
   "optuna_study": {
     "n_trials": 200,
-    "elapsed_s": 125,
-    "best_value": 107.21229999999998,
+    "elapsed_s": 151,
+    "best_value": 138.55743599999997,
     "n_completed": 200
   }
 }

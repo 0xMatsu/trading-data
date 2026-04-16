@@ -1,0 +1,4651 @@
+{
+  "n_trials": 200,
+  "elapsed_s": 151,
+  "best_value": 138.55743599999997,
+  "best_params": {
+    "min_score": 23,
+    "min_vol_m": 1.9432898948103334,
+    "sl_pct": 8.01769849570823,
+    "tp_pct": 6.417335909094549,
+    "cooldown_ticks": 2,
+    "momentum_window": 1,
+    "direction_penalty": 2.672477934149333,
+    "margin_min": 19.969310802111263
+  },
+  "search_space": {
+    "min_score": [
+      10,
+      60
+    ],
+    "min_vol_m": [
+      0.5,
+      5.0
+    ],
+    "sl_pct": [
+      5.0,
+      18.0
+    ],
+    "tp_pct": [
+      5.0,
+      20.0
+    ],
+    "cooldown_ticks": [
+      1,
+      6
+    ],
+    "momentum_window": [
+      0,
+      5
+    ],
+    "direction_penalty": [
+      0.0,
+      3.0
+    ],
+    "margin_min": [
+      5.0,
+      20.0
+    ]
+  },
+  "trials": [
+    {
+      "trial_number": 0,
+      "value": 0.0,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:37.807645",
+      "params": {
+        "min_score": 55,
+        "min_vol_m": 2.5228012577449754,
+        "sl_pct": 10.498212704828301,
+        "tp_pct": 17.983629341536126,
+        "cooldown_ticks": 2,
+        "momentum_window": 2,
+        "direction_penalty": 0.6122112271935001,
+        "margin_min": 13.950568974948268
+      },
+      "result_summary": {
+        "total_pnl": 0.0,
+        "win_rate": 0,
+        "n_trades": 0,
+        "max_dd": 0,
+        "sharpe": 0.0
+      }
+    },
+    {
+      "trial_number": 1,
+      "value": 39.914023,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:37.814467",
+      "params": {
+        "min_score": 34,
+        "min_vol_m": 4.8047582967668525,
+        "sl_pct": 15.384033994088016,
+        "tp_pct": 16.051259019139508,
+        "cooldown_ticks": 4,
+        "momentum_window": 5,
+        "direction_penalty": 0.8967100633124655,
+        "margin_min": 11.783049031724765
+      },
+      "result_summary": {
+        "total_pnl": 40.4041,
+        "win_rate": 0.6923,
+        "n_trades": 13,
+        "max_dd": 9.94,
+        "sharpe": 0.3486
+      }
+    },
+    {
+      "trial_number": 2,
+      "value": 0.0,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:37.831318",
+      "params": {
+        "min_score": 56,
+        "min_vol_m": 4.430080295407951,
+        "sl_pct": 14.007385260504593,
+        "tp_pct": 19.40274583707061,
+        "cooldown_ticks": 1,
+        "momentum_window": 5,
+        "direction_penalty": 0.6826081474901057,
+        "margin_min": 19.293565489786353
+      },
+      "result_summary": {
+        "total_pnl": 0.0,
+        "win_rate": 0,
+        "n_trades": 0,
+        "max_dd": 0,
+        "sharpe": 0.0
+      }
+    },
+    {
+      "trial_number": 3,
+      "value": 4.6354,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:37.873616",
+      "params": {
+        "min_score": 45,
+        "min_vol_m": 4.048467987238561,
+        "sl_pct": 14.359835297113142,
+        "tp_pct": 14.75629182082972,
+        "cooldown_ticks": 3,
+        "momentum_window": 5,
+        "direction_penalty": 1.9070301920320674,
+        "margin_min": 19.78076403609178
+      },
+      "result_summary": {
+        "total_pnl": 5.2574,
+        "win_rate": 0.6,
+        "n_trades": 5,
+        "max_dd": 12.56,
+        "sharpe": 0.0932
+      }
+    },
+    {
+      "trial_number": 4,
+      "value": -11.3246,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:40.408380",
+      "params": {
+        "min_score": 10,
+        "min_vol_m": 2.196922038738342,
+        "sl_pct": 17.01970278470168,
+        "tp_pct": 10.102555919262826,
+        "cooldown_ticks": 3,
+        "momentum_window": 1,
+        "direction_penalty": 1.2287393931009776,
+        "margin_min": 18.124767925110167
+      },
+      "result_summary": {
+        "total_pnl": -10.2241,
+        "win_rate": 0.55,
+        "n_trades": 20,
+        "max_dd": 22.12,
+        "sharpe": -0.0677
+      }
+    },
+    {
+      "trial_number": 5,
+      "value": 56.564774,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:40.506350",
+      "params": {
+        "min_score": 28,
+        "min_vol_m": 4.482264291890803,
+        "sl_pct": 6.710640434736637,
+        "tp_pct": 18.02861099213496,
+        "cooldown_ticks": 1,
+        "momentum_window": 4,
+        "direction_penalty": 0.5480285341931802,
+        "margin_min": 14.991560295435107
+      },
+      "result_summary": {
+        "total_pnl": 57.1277,
+        "win_rate": 0.4074,
+        "n_trades": 27,
+        "max_dd": 11.34,
+        "sharpe": 0.265
+      }
+    },
+    {
+      "trial_number": 6,
+      "value": 36.6606,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:40.517748",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 1.7781896610982346,
+        "sl_pct": 9.327352446493437,
+        "tp_pct": 19.306169085117602,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.542684965916578,
+        "margin_min": 6.713696702449213
+      },
+      "result_summary": {
+        "total_pnl": 36.8876,
+        "win_rate": 0.5,
+        "n_trades": 20,
+        "max_dd": 4.64,
+        "sharpe": 0.2924
+      }
+    },
+    {
+      "trial_number": 7,
+      "value": 125.692625,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:40.579961",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.0450189122632922,
+        "sl_pct": 12.040890467100684,
+        "tp_pct": 6.704374536537857,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 0.8322489672865578,
+        "margin_min": 17.705018450464635
+      },
+      "result_summary": {
+        "total_pnl": 126.078,
+        "win_rate": 0.8125,
+        "n_trades": 48,
+        "max_dd": 7.87,
+        "sharpe": 0.5103
+      }
+    },
+    {
+      "trial_number": 8,
+      "value": 0.9034999999999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:42.903008",
+      "params": {
+        "min_score": 43,
+        "min_vol_m": 1.5841293710018989,
+        "sl_pct": 17.95115498285322,
+        "tp_pct": 9.49238839359909,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 1.0207578611541384,
+        "margin_min": 6.033644220682386
+      },
+      "result_summary": {
+        "total_pnl": 1.5045,
+        "win_rate": 0.7,
+        "n_trades": 10,
+        "max_dd": 12.16,
+        "sharpe": 0.0261
+      }
+    },
+    {
+      "trial_number": 9,
+      "value": 19.454471,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:43.104199",
+      "params": {
+        "min_score": 34,
+        "min_vol_m": 1.355186038640017,
+        "sl_pct": 14.427461996576504,
+        "tp_pct": 9.250923229305245,
+        "cooldown_ticks": 6,
+        "momentum_window": 2,
+        "direction_penalty": 2.193807841457405,
+        "margin_min": 7.950668364539438
+      },
+      "result_summary": {
+        "total_pnl": 19.9045,
+        "win_rate": 0.6471,
+        "n_trades": 17,
+        "max_dd": 9.13,
+        "sharpe": 0.2234
+      }
+    },
+    {
+      "trial_number": 10,
+      "value": 6.5777,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:43.299364",
+      "params": {
+        "min_score": 51,
+        "min_vol_m": 2.4105789027918103,
+        "sl_pct": 7.274760276108534,
+        "tp_pct": 6.683176253790219,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.9191335183535377,
+        "margin_min": 8.690070298922649
+      },
+      "result_summary": {
+        "total_pnl": 6.6737,
+        "win_rate": 0.6,
+        "n_trades": 5,
+        "max_dd": 2.04,
+        "sharpe": 0.4309
+      }
+    },
+    {
+      "trial_number": 11,
+      "value": 8.788386000000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:43.376904",
+      "params": {
+        "min_score": 46,
+        "min_vol_m": 4.160423608840663,
+        "sl_pct": 7.942221281300232,
+        "tp_pct": 18.801678310936126,
+        "cooldown_ticks": 3,
+        "momentum_window": 1,
+        "direction_penalty": 2.422388945430423,
+        "margin_min": 19.61654354541068
+      },
+      "result_summary": {
+        "total_pnl": 9.4671,
+        "win_rate": 0.4286,
+        "n_trades": 7,
+        "max_dd": 13.66,
+        "sharpe": 0.1378
+      }
+    },
+    {
+      "trial_number": 12,
+      "value": 9.674688,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:45.703044",
+      "params": {
+        "min_score": 29,
+        "min_vol_m": 0.5234076381905904,
+        "sl_pct": 5.23706820824835,
+        "tp_pct": 6.765641815187022,
+        "cooldown_ticks": 6,
+        "momentum_window": 5,
+        "direction_penalty": 0.03517063078213978,
+        "margin_min": 9.730327965082372
+      },
+      "result_summary": {
+        "total_pnl": 10.159,
+        "win_rate": 0.4688,
+        "n_trades": 32,
+        "max_dd": 9.78,
+        "sharpe": 0.0957
+      }
+    },
+    {
+      "trial_number": 13,
+      "value": 25.953955999999998,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:45.755656",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 0.5134064079273308,
+        "sl_pct": 11.934043319016975,
+        "tp_pct": 13.230833236501406,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 0.15199083034749306,
+        "margin_min": 15.676585469184348
+      },
+      "result_summary": {
+        "total_pnl": 26.2994,
+        "win_rate": 0.5556,
+        "n_trades": 18,
+        "max_dd": 7.02,
+        "sharpe": 0.2038
+      }
+    },
+    {
+      "trial_number": 14,
+      "value": -1.5440060000000002,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:45.769460",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 3.356029027558186,
+        "sl_pct": 5.106020938525143,
+        "tp_pct": 5.689210333615918,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 0.005622838979495226,
+        "margin_min": 15.797505731819129
+      },
+      "result_summary": {
+        "total_pnl": -0.5032,
+        "win_rate": 0.4694,
+        "n_trades": 98,
+        "max_dd": 20.91,
+        "sharpe": -0.0014
+      }
+    },
+    {
+      "trial_number": 15,
+      "value": 7.465834,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:45.800501",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 0.5479004599125816,
+        "sl_pct": 5.169542838156334,
+        "tp_pct": 12.84697804255926,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 0.10323834716343244,
+        "margin_min": 15.831742438826481
+      },
+      "result_summary": {
+        "total_pnl": 8.4747,
+        "win_rate": 0.3134,
+        "n_trades": 67,
+        "max_dd": 20.24,
+        "sharpe": 0.0252
+      }
+    },
+    {
+      "trial_number": 16,
+      "value": -4.074938,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:48.183602",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.452047196379655,
+        "sl_pct": 5.351844678982018,
+        "tp_pct": 5.203287017152872,
+        "cooldown_ticks": 1,
+        "momentum_window": 4,
+        "direction_penalty": 1.5748671484798389,
+        "margin_min": 15.897191476974031
+      },
+      "result_summary": {
+        "total_pnl": -3.297,
+        "win_rate": 0.5062,
+        "n_trades": 81,
+        "max_dd": 15.66,
+        "sharpe": -0.0109
+      }
+    },
+    {
+      "trial_number": 17,
+      "value": 1.801259,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:48.262046",
+      "params": {
+        "min_score": 17,
+        "min_vol_m": 3.3395481075575097,
+        "sl_pct": 12.204042565018453,
+        "tp_pct": 5.082618331309838,
+        "cooldown_ticks": 1,
+        "momentum_window": 4,
+        "direction_penalty": 1.5560943968182752,
+        "margin_min": 15.579304215599125
+      },
+      "result_summary": {
+        "total_pnl": 2.9722,
+        "win_rate": 0.7059,
+        "n_trades": 51,
+        "max_dd": 23.56,
+        "sharpe": 0.0108
+      }
+    },
+    {
+      "trial_number": 18,
+      "value": 69.490938,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:48.526315",
+      "params": {
+        "min_score": 16,
+        "min_vol_m": 3.299041551412697,
+        "sl_pct": 12.38355007147517,
+        "tp_pct": 11.609763790667374,
+        "cooldown_ticks": 2,
+        "momentum_window": 4,
+        "direction_penalty": 1.5915333173745712,
+        "margin_min": 16.279888564537995
+      },
+      "result_summary": {
+        "total_pnl": 69.7919,
+        "win_rate": 0.6538,
+        "n_trades": 26,
+        "max_dd": 6.15,
+        "sharpe": 0.3915
+      }
+    },
+    {
+      "trial_number": 19,
+      "value": -31.137249999999998,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:48.870704",
+      "params": {
+        "min_score": 11,
+        "min_vol_m": 3.3236051152696504,
+        "sl_pct": 12.11360917596178,
+        "tp_pct": 11.127209891220458,
+        "cooldown_ticks": 2,
+        "momentum_window": 4,
+        "direction_penalty": 1.5875521897448228,
+        "margin_min": 17.109509005221714
+      },
+      "result_summary": {
+        "total_pnl": -30.182,
+        "win_rate": 0.375,
+        "n_trades": 16,
+        "max_dd": 19.18,
+        "sharpe": -0.3095
+      }
+    },
+    {
+      "trial_number": 20,
+      "value": -4.418133,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:51.001273",
+      "params": {
+        "min_score": 13,
+        "min_vol_m": 3.220088920362249,
+        "sl_pct": 12.910129776136888,
+        "tp_pct": 16.758715133390286,
+        "cooldown_ticks": 2,
+        "momentum_window": 4,
+        "direction_penalty": 1.5689361652014804,
+        "margin_min": 12.662509176399578
+      },
+      "result_summary": {
+        "total_pnl": -3.7733,
+        "win_rate": 0.4167,
+        "n_trades": 24,
+        "max_dd": 12.98,
+        "sharpe": -0.0228
+      }
+    },
+    {
+      "trial_number": 21,
+      "value": 58.672873,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:51.075643",
+      "params": {
+        "min_score": 38,
+        "min_vol_m": 2.9969956427065574,
+        "sl_pct": 10.049335613578734,
+        "tp_pct": 16.532558868030996,
+        "cooldown_ticks": 2,
+        "momentum_window": 3,
+        "direction_penalty": 1.3358851803210343,
+        "margin_min": 12.148912081659885
+      },
+      "result_summary": {
+        "total_pnl": 58.8346,
+        "win_rate": 0.7273,
+        "n_trades": 11,
+        "max_dd": 3.38,
+        "sharpe": 0.7031
+      }
+    },
+    {
+      "trial_number": 22,
+      "value": 8.480716999999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:51.655316",
+      "params": {
+        "min_score": 10,
+        "min_vol_m": 3.030733742095363,
+        "sl_pct": 10.737073002276068,
+        "tp_pct": 10.641915476171873,
+        "cooldown_ticks": 2,
+        "momentum_window": 3,
+        "direction_penalty": 2.9970959412781237,
+        "margin_min": 17.607441777624565
+      },
+      "result_summary": {
+        "total_pnl": 9.4743,
+        "win_rate": 0.5417,
+        "n_trades": 24,
+        "max_dd": 19.98,
+        "sharpe": 0.0678
+      }
+    },
+    {
+      "trial_number": 23,
+      "value": 1.9829259999999997,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:51.729855",
+      "params": {
+        "min_score": 15,
+        "min_vol_m": 2.9406084877168834,
+        "sl_pct": 10.113944209016763,
+        "tp_pct": 8.105375718657422,
+        "cooldown_ticks": 5,
+        "momentum_window": 3,
+        "direction_penalty": 2.855616941073346,
+        "margin_min": 12.517764003311319
+      },
+      "result_summary": {
+        "total_pnl": 2.6439,
+        "win_rate": 0.5526,
+        "n_trades": 38,
+        "max_dd": 13.33,
+        "sharpe": 0.0138
+      }
+    },
+    {
+      "trial_number": 24,
+      "value": 70.291673,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:53.649271",
+      "params": {
+        "min_score": 29,
+        "min_vol_m": 2.937409781217897,
+        "sl_pct": 9.661726765234725,
+        "tp_pct": 8.220501947171375,
+        "cooldown_ticks": 2,
+        "momentum_window": 3,
+        "direction_penalty": 1.3093109803485352,
+        "margin_min": 13.368472343156107
+      },
+      "result_summary": {
+        "total_pnl": 70.5109,
+        "win_rate": 0.7273,
+        "n_trades": 33,
+        "max_dd": 4.53,
+        "sharpe": 0.4071
+      }
+    },
+    {
+      "trial_number": 25,
+      "value": 48.238972999999994,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:53.771165",
+      "params": {
+        "min_score": 38,
+        "min_vol_m": 2.904258595162085,
+        "sl_pct": 10.442825445220674,
+        "tp_pct": 14.474549885077234,
+        "cooldown_ticks": 4,
+        "momentum_window": 3,
+        "direction_penalty": 2.780178930188034,
+        "margin_min": 11.256240128705677
+      },
+      "result_summary": {
+        "total_pnl": 48.4002,
+        "win_rate": 0.7273,
+        "n_trades": 11,
+        "max_dd": 3.37,
+        "sharpe": 0.6455
+      }
+    },
+    {
+      "trial_number": 26,
+      "value": 22.331899999999997,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:54.700282",
+      "params": {
+        "min_score": 39,
+        "min_vol_m": 2.7704856543602405,
+        "sl_pct": 10.164177900485038,
+        "tp_pct": 14.316748414414253,
+        "cooldown_ticks": 4,
+        "momentum_window": 3,
+        "direction_penalty": 1.2297545127492793,
+        "margin_min": 11.669590849231275
+      },
+      "result_summary": {
+        "total_pnl": 22.4929,
+        "win_rate": 0.6,
+        "n_trades": 10,
+        "max_dd": 3.34,
+        "sharpe": 0.3077
+      }
+    },
+    {
+      "trial_number": 27,
+      "value": 24.922367,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:54.751586",
+      "params": {
+        "min_score": 39,
+        "min_vol_m": 2.142287211502987,
+        "sl_pct": 13.021098787647784,
+        "tp_pct": 14.579834143394944,
+        "cooldown_ticks": 4,
+        "momentum_window": 3,
+        "direction_penalty": 1.2317384203110318,
+        "margin_min": 11.363449898894478
+      },
+      "result_summary": {
+        "total_pnl": 25.1112,
+        "win_rate": 0.6667,
+        "n_trades": 9,
+        "max_dd": 3.91,
+        "sharpe": 0.3523
+      }
+    },
+    {
+      "trial_number": 28,
+      "value": 45.160316,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:57.592238",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.046816640117948,
+        "sl_pct": 8.811035277891854,
+        "tp_pct": 8.065395420906636,
+        "cooldown_ticks": 4,
+        "momentum_window": 1,
+        "direction_penalty": 1.858564027144945,
+        "margin_min": 13.345641264951805
+      },
+      "result_summary": {
+        "total_pnl": 45.7611,
+        "win_rate": 0.6216,
+        "n_trades": 37,
+        "max_dd": 12.14,
+        "sharpe": 0.2357
+      }
+    },
+    {
+      "trial_number": 29,
+      "value": 28.1999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:57.923149",
+      "params": {
+        "min_score": 30,
+        "min_vol_m": 3.7359611524650176,
+        "sl_pct": 8.840787412053109,
+        "tp_pct": 8.412571896550624,
+        "cooldown_ticks": 2,
+        "momentum_window": 3,
+        "direction_penalty": 1.8769278096211957,
+        "margin_min": 14.04608401230464
+      },
+      "result_summary": {
+        "total_pnl": 28.8724,
+        "win_rate": 0.6,
+        "n_trades": 30,
+        "max_dd": 13.57,
+        "sharpe": 0.1668
+      }
+    },
+    {
+      "trial_number": 30,
+      "value": 89.74181700000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:58.631096",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 3.669458680277991,
+        "sl_pct": 8.855160495632965,
+        "tp_pct": 8.124197956221336,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 1.9150591376325896,
+        "margin_min": 14.05382305475849
+      },
+      "result_summary": {
+        "total_pnl": 90.123,
+        "win_rate": 0.7317,
+        "n_trades": 41,
+        "max_dd": 7.77,
+        "sharpe": 0.4312
+      }
+    },
+    {
+      "trial_number": 31,
+      "value": 88.221873,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:56:58.718133",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 3.6419460585172665,
+        "sl_pct": 8.886128578178575,
+        "tp_pct": 8.099648108734659,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 1.8064203695541559,
+        "margin_min": 13.896498809707246
+      },
+      "result_summary": {
+        "total_pnl": 88.5928,
+        "win_rate": 0.7073,
+        "n_trades": 41,
+        "max_dd": 7.56,
+        "sharpe": 0.4271
+      }
+    },
+    {
+      "trial_number": 32,
+      "value": 0.0,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:01.757370",
+      "params": {
+        "min_score": 60,
+        "min_vol_m": 3.7413904879846664,
+        "sl_pct": 11.420405390727328,
+        "tp_pct": 11.506604774497205,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 1.7655813592867426,
+        "margin_min": 14.168719183477627
+      },
+      "result_summary": {
+        "total_pnl": 0.0,
+        "win_rate": 0,
+        "n_trades": 0,
+        "max_dd": 0,
+        "sharpe": 0.0
+      }
+    },
+    {
+      "trial_number": 33,
+      "value": -19.504814,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:02.017440",
+      "params": {
+        "min_score": 18,
+        "min_vol_m": 2.5882705308870446,
+        "sl_pct": 11.165354044795832,
+        "tp_pct": 11.889589315939473,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 0.34861705864944537,
+        "margin_min": 14.197557897105709
+      },
+      "result_summary": {
+        "total_pnl": -18.5546,
+        "win_rate": 0.4286,
+        "n_trades": 21,
+        "max_dd": 19.09,
+        "sharpe": -0.1566
+      }
+    },
+    {
+      "trial_number": 34,
+      "value": 42.066266999999996,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:02.554095",
+      "params": {
+        "min_score": 31,
+        "min_vol_m": 2.654315745696908,
+        "sl_pct": 11.315809155841286,
+        "tp_pct": 11.870452802367813,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.1915038237620683,
+        "margin_min": 14.437174705515758
+      },
+      "result_summary": {
+        "total_pnl": 42.4526,
+        "win_rate": 0.6667,
+        "n_trades": 18,
+        "max_dd": 7.86,
+        "sharpe": 0.3052
+      }
+    },
+    {
+      "trial_number": 35,
+      "value": 39.0733,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:02.688484",
+      "params": {
+        "min_score": 32,
+        "min_vol_m": 2.59858678996567,
+        "sl_pct": 11.272466734967944,
+        "tp_pct": 6.862053140362893,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.1225291510203563,
+        "margin_min": 14.132452559688527
+      },
+      "result_summary": {
+        "total_pnl": 39.4778,
+        "win_rate": 0.75,
+        "n_trades": 28,
+        "max_dd": 8.24,
+        "sharpe": 0.2539
+      }
+    },
+    {
+      "trial_number": 36,
+      "value": 55.5997,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:05.694084",
+      "params": {
+        "min_score": 33,
+        "min_vol_m": 2.496334017851714,
+        "sl_pct": 8.180522900529631,
+        "tp_pct": 7.12630871265577,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.0943928319730234,
+        "margin_min": 14.621915810674595
+      },
+      "result_summary": {
+        "total_pnl": 55.9116,
+        "win_rate": 0.76,
+        "n_trades": 25,
+        "max_dd": 6.39,
+        "sharpe": 0.471
+      }
+    },
+    {
+      "trial_number": 37,
+      "value": 58.185941,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:06.212829",
+      "params": {
+        "min_score": 32,
+        "min_vol_m": 3.8496636463476817,
+        "sl_pct": 8.004348273040451,
+        "tp_pct": 6.943656002424838,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.146843416661559,
+        "margin_min": 18.383664754580874
+      },
+      "result_summary": {
+        "total_pnl": 58.6107,
+        "win_rate": 0.7241,
+        "n_trades": 29,
+        "max_dd": 8.64,
+        "sharpe": 0.3661
+      }
+    },
+    {
+      "trial_number": 38,
+      "value": 32.158554,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:06.503045",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 4.7807894566370726,
+        "sl_pct": 8.017315238404825,
+        "tp_pct": 6.982659856929261,
+        "cooldown_ticks": 3,
+        "momentum_window": 0,
+        "direction_penalty": 2.0544596286176464,
+        "margin_min": 10.36826550800697
+      },
+      "result_summary": {
+        "total_pnl": 32.7494,
+        "win_rate": 0.6154,
+        "n_trades": 39,
+        "max_dd": 11.94,
+        "sharpe": 0.2076
+      }
+    },
+    {
+      "trial_number": 39,
+      "value": 59.999579000000004,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:06.855097",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 3.7240832529762713,
+        "sl_pct": 7.885963830653664,
+        "tp_pct": 7.349130389236064,
+        "cooldown_ticks": 3,
+        "momentum_window": 0,
+        "direction_penalty": 0.7867966478543476,
+        "margin_min": 18.620410578536546
+      },
+      "result_summary": {
+        "total_pnl": 60.5733,
+        "win_rate": 0.6279,
+        "n_trades": 43,
+        "max_dd": 11.6,
+        "sharpe": 0.2574
+      }
+    },
+    {
+      "trial_number": 40,
+      "value": 57.267281,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:09.857066",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 4.738689601849659,
+        "sl_pct": 6.281979592878054,
+        "tp_pct": 9.097525373219867,
+        "cooldown_ticks": 3,
+        "momentum_window": 0,
+        "direction_penalty": 0.7932063272760872,
+        "margin_min": 18.712305966155366
+      },
+      "result_summary": {
+        "total_pnl": 57.7742,
+        "win_rate": 0.5581,
+        "n_trades": 43,
+        "max_dd": 10.25,
+        "sharpe": 0.2303
+      }
+    },
+    {
+      "trial_number": 41,
+      "value": 59.5921,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:10.409086",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 4.830819762700383,
+        "sl_pct": 6.312637831195625,
+        "tp_pct": 9.037118251836002,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.6920957042144953,
+        "margin_min": 13.205341282597386
+      },
+      "result_summary": {
+        "total_pnl": 60.0616,
+        "win_rate": 0.6,
+        "n_trades": 40,
+        "max_dd": 9.51,
+        "sharpe": 0.304
+      }
+    },
+    {
+      "trial_number": 42,
+      "value": 67.140511,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:10.458191",
+      "params": {
+        "min_score": 27,
+        "min_vol_m": 1.2132753364598252,
+        "sl_pct": 6.731649780015042,
+        "tp_pct": 8.861649050014597,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.8186103756722576,
+        "margin_min": 16.732690091899194
+      },
+      "result_summary": {
+        "total_pnl": 67.5864,
+        "win_rate": 0.6111,
+        "n_trades": 36,
+        "max_dd": 9.04,
+        "sharpe": 0.3386
+      }
+    },
+    {
+      "trial_number": 43,
+      "value": 58.381598000000004,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:11.047053",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 4.20233382531405,
+        "sl_pct": 9.287491322686863,
+        "tp_pct": 9.27040980122425,
+        "cooldown_ticks": 1,
+        "momentum_window": 2,
+        "direction_penalty": 2.410714669003995,
+        "margin_min": 13.218001177759557
+      },
+      "result_summary": {
+        "total_pnl": 58.889,
+        "win_rate": 0.6098,
+        "n_trades": 41,
+        "max_dd": 10.27,
+        "sharpe": 0.2529
+      }
+    },
+    {
+      "trial_number": 44,
+      "value": 65.718661,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:13.852400",
+      "params": {
+        "min_score": 28,
+        "min_vol_m": 3.988559550312347,
+        "sl_pct": 9.431874003586806,
+        "tp_pct": 10.307628552561436,
+        "cooldown_ticks": 1,
+        "momentum_window": 2,
+        "direction_penalty": 1.3994581709929286,
+        "margin_min": 16.482679686917844
+      },
+      "result_summary": {
+        "total_pnl": 66.2096,
+        "win_rate": 0.6061,
+        "n_trades": 33,
+        "max_dd": 9.94,
+        "sharpe": 0.2912
+      }
+    },
+    {
+      "trial_number": 45,
+      "value": 64.372698,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:14.408190",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 4.036617314668298,
+        "sl_pct": 9.457377909116937,
+        "tp_pct": 10.141020858974994,
+        "cooldown_ticks": 1,
+        "momentum_window": 2,
+        "direction_penalty": 1.3962292695971144,
+        "margin_min": 13.114030787786213
+      },
+      "result_summary": {
+        "total_pnl": 64.7976,
+        "win_rate": 0.6098,
+        "n_trades": 41,
+        "max_dd": 8.62,
+        "sharpe": 0.2664
+      }
+    },
+    {
+      "trial_number": 46,
+      "value": 49.472042,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:14.483204",
+      "params": {
+        "min_score": 36,
+        "min_vol_m": 4.0409774771692675,
+        "sl_pct": 9.442438350748322,
+        "tp_pct": 10.194869039516439,
+        "cooldown_ticks": 1,
+        "momentum_window": 5,
+        "direction_penalty": 1.037865734794111,
+        "margin_min": 17.112939371425615
+      },
+      "result_summary": {
+        "total_pnl": 49.6597,
+        "win_rate": 0.6842,
+        "n_trades": 19,
+        "max_dd": 3.89,
+        "sharpe": 0.3615
+      }
+    },
+    {
+      "trial_number": 47,
+      "value": 48.83220000000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:15.197026",
+      "params": {
+        "min_score": 36,
+        "min_vol_m": 3.9443424396029085,
+        "sl_pct": 15.163213203852246,
+        "tp_pct": 9.882864637443538,
+        "cooldown_ticks": 2,
+        "momentum_window": 5,
+        "direction_penalty": 1.3716572228947208,
+        "margin_min": 16.58214583797385
+      },
+      "result_summary": {
+        "total_pnl": 49.1287,
+        "win_rate": 0.8,
+        "n_trades": 15,
+        "max_dd": 6.09,
+        "sharpe": 0.4216
+      }
+    },
+    {
+      "trial_number": 48,
+      "value": 61.9292,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:18.255979",
+      "params": {
+        "min_score": 35,
+        "min_vol_m": 3.4836184537225705,
+        "sl_pct": 13.177268192697333,
+        "tp_pct": 6.040151007456791,
+        "cooldown_ticks": 2,
+        "momentum_window": 5,
+        "direction_penalty": 0.9872940457726277,
+        "margin_min": 15.059357818987602
+      },
+      "result_summary": {
+        "total_pnl": 62.1704,
+        "win_rate": 0.88,
+        "n_trades": 25,
+        "max_dd": 5.0,
+        "sharpe": 0.5337
+      }
+    },
+    {
+      "trial_number": 49,
+      "value": 15.831543,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:18.411422",
+      "params": {
+        "min_score": 17,
+        "min_vol_m": 3.607760287672304,
+        "sl_pct": 13.4483126870384,
+        "tp_pct": 6.101803419141107,
+        "cooldown_ticks": 2,
+        "momentum_window": 4,
+        "direction_penalty": 1.6993718966880815,
+        "margin_min": 15.348667604733407
+      },
+      "result_summary": {
+        "total_pnl": 16.4924,
+        "win_rate": 0.7143,
+        "n_trades": 42,
+        "max_dd": 13.36,
+        "sharpe": 0.0669
+      }
+    },
+    {
+      "trial_number": 50,
+      "value": 4.325677,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:18.441416",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 3.5787365334214374,
+        "sl_pct": 14.559135752241636,
+        "tp_pct": 5.858822918958117,
+        "cooldown_ticks": 2,
+        "momentum_window": 4,
+        "direction_penalty": 1.766213766205445,
+        "margin_min": 14.962928936523879
+      },
+      "result_summary": {
+        "total_pnl": 4.9032,
+        "win_rate": 0.6977,
+        "n_trades": 43,
+        "max_dd": 11.69,
+        "sharpe": 0.0192
+      }
+    },
+    {
+      "trial_number": 51,
+      "value": -16.793550000000003,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:19.291039",
+      "params": {
+        "min_score": 18,
+        "min_vol_m": 3.5666217730077316,
+        "sl_pct": 13.61209509217388,
+        "tp_pct": 7.741717842755219,
+        "cooldown_ticks": 2,
+        "momentum_window": 4,
+        "direction_penalty": 1.0392211226519812,
+        "margin_min": 15.011140627253983
+      },
+      "result_summary": {
+        "total_pnl": -15.4578,
+        "win_rate": 0.575,
+        "n_trades": 40,
+        "max_dd": 26.83,
+        "sharpe": -0.0579
+      }
+    },
+    {
+      "trial_number": 52,
+      "value": -2.571641,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:22.344160",
+      "params": {
+        "min_score": 18,
+        "min_vol_m": 2.2933559805338604,
+        "sl_pct": 14.54542601662499,
+        "tp_pct": 6.059094428592396,
+        "cooldown_ticks": 3,
+        "momentum_window": 4,
+        "direction_penalty": 1.7762899461391874,
+        "margin_min": 19.696118125318804
+      },
+      "result_summary": {
+        "total_pnl": -1.7252,
+        "win_rate": 0.7059,
+        "n_trades": 34,
+        "max_dd": 17.07,
+        "sharpe": -0.0083
+      }
+    },
+    {
+      "trial_number": 53,
+      "value": -26.245400000000004,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:22.427052",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 4.3653411499758645,
+        "sl_pct": 12.494729227973234,
+        "tp_pct": 7.695082777202833,
+        "cooldown_ticks": 5,
+        "momentum_window": 1,
+        "direction_penalty": 2.3598821565361154,
+        "margin_min": 19.230412352330262
+      },
+      "result_summary": {
+        "total_pnl": -25.3789,
+        "win_rate": 0.5,
+        "n_trades": 24,
+        "max_dd": 17.43,
+        "sharpe": -0.1653
+      }
+    },
+    {
+      "trial_number": 54,
+      "value": 26.779805,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:22.484018",
+      "params": {
+        "min_score": 28,
+        "min_vol_m": 0.9712128171113044,
+        "sl_pct": 6.845360903556589,
+        "tp_pct": 7.607873458475115,
+        "cooldown_ticks": 3,
+        "momentum_window": 1,
+        "direction_penalty": 1.0900642671620455,
+        "margin_min": 17.697032502071874
+      },
+      "result_summary": {
+        "total_pnl": 27.3059,
+        "win_rate": 0.5405,
+        "n_trades": 37,
+        "max_dd": 10.63,
+        "sharpe": 0.1372
+      }
+    },
+    {
+      "trial_number": 55,
+      "value": 60.80147600000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:23.494037",
+      "params": {
+        "min_score": 28,
+        "min_vol_m": 1.069217738434693,
+        "sl_pct": 7.177873081844268,
+        "tp_pct": 8.678791615860524,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.6444602152384149,
+        "margin_min": 19.406893379920707
+      },
+      "result_summary": {
+        "total_pnl": 61.4498,
+        "win_rate": 0.6176,
+        "n_trades": 34,
+        "max_dd": 13.09,
+        "sharpe": 0.3113
+      }
+    },
+    {
+      "trial_number": 56,
+      "value": 58.5673,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:26.516897",
+      "params": {
+        "min_score": 28,
+        "min_vol_m": 0.9038134920626624,
+        "sl_pct": 7.293744932440095,
+        "tp_pct": 8.863819160845278,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.408616119136155,
+        "margin_min": 17.83305828674372
+      },
+      "result_summary": {
+        "total_pnl": 59.1848,
+        "win_rate": 0.6,
+        "n_trades": 35,
+        "max_dd": 12.47,
+        "sharpe": 0.2878
+      }
+    },
+    {
+      "trial_number": 57,
+      "value": 72.17747099999998,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:26.533241",
+      "params": {
+        "min_score": 27,
+        "min_vol_m": 0.9747770248827499,
+        "sl_pct": 7.114532653841246,
+        "tp_pct": 8.687571841643893,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.4379042473353888,
+        "margin_min": 17.646829811079012
+      },
+      "result_summary": {
+        "total_pnl": 72.6809,
+        "win_rate": 0.6571,
+        "n_trades": 35,
+        "max_dd": 10.2,
+        "sharpe": 0.3654
+      }
+    },
+    {
+      "trial_number": 58,
+      "value": -25.542962000000003,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:26.695809",
+      "params": {
+        "min_score": 15,
+        "min_vol_m": 1.3344711340276485,
+        "sl_pct": 16.381745320951254,
+        "tp_pct": 8.570559252991174,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 0.3658235148684076,
+        "margin_min": 17.21798818088407
+      },
+      "result_summary": {
+        "total_pnl": -24.2317,
+        "win_rate": 0.5238,
+        "n_trades": 21,
+        "max_dd": 26.33,
+        "sharpe": -0.1659
+      }
+    },
+    {
+      "trial_number": 59,
+      "value": -28.583954000000002,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:27.706056",
+      "params": {
+        "min_score": 15,
+        "min_vol_m": 1.812290268635395,
+        "sl_pct": 16.306120627956854,
+        "tp_pct": 10.924132671526197,
+        "cooldown_ticks": 2,
+        "momentum_window": 2,
+        "direction_penalty": 0.42472746822237695,
+        "margin_min": 16.139654650871424
+      },
+      "result_summary": {
+        "total_pnl": -27.7818,
+        "win_rate": 0.3846,
+        "n_trades": 13,
+        "max_dd": 16.12,
+        "sharpe": -0.3141
+      }
+    },
+    {
+      "trial_number": 60,
+      "value": 31.450767000000003,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:30.529143",
+      "params": {
+        "min_score": 14,
+        "min_vol_m": 1.670191777396193,
+        "sl_pct": 8.649119227620032,
+        "tp_pct": 13.529345440908289,
+        "cooldown_ticks": 2,
+        "momentum_window": 2,
+        "direction_penalty": 1.9838936422486397,
+        "margin_min": 16.5354920327595
+      },
+      "result_summary": {
+        "total_pnl": 31.9651,
+        "win_rate": 0.4667,
+        "n_trades": 30,
+        "max_dd": 10.38,
+        "sharpe": 0.184
+      }
+    },
+    {
+      "trial_number": 61,
+      "value": 27.415516999999998,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:30.596003",
+      "params": {
+        "min_score": 14,
+        "min_vol_m": 1.8701179283735585,
+        "sl_pct": 8.593123983848146,
+        "tp_pct": 10.793021907312415,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 1.9822220714273635,
+        "margin_min": 13.556664747984875
+      },
+      "result_summary": {
+        "total_pnl": 27.9968,
+        "win_rate": 0.5217,
+        "n_trades": 46,
+        "max_dd": 11.73,
+        "sharpe": 0.126
+      }
+    },
+    {
+      "trial_number": 62,
+      "value": 72.36242899999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:30.736034",
+      "params": {
+        "min_score": 30,
+        "min_vol_m": 1.7373219213007145,
+        "sl_pct": 8.544386443902184,
+        "tp_pct": 10.760769047792976,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 1.9916021726067756,
+        "margin_min": 16.357024644552702
+      },
+      "result_summary": {
+        "total_pnl": 73.0178,
+        "win_rate": 0.6129,
+        "n_trades": 31,
+        "max_dd": 13.23,
+        "sharpe": 0.3377
+      }
+    },
+    {
+      "trial_number": 63,
+      "value": 36.425594,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:32.023053",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 1.620300719580242,
+        "sl_pct": 10.819085321310332,
+        "tp_pct": 13.519633328606526,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 1.6609203289509114,
+        "margin_min": 10.44558195144881
+      },
+      "result_summary": {
+        "total_pnl": 37.0383,
+        "win_rate": 0.5294,
+        "n_trades": 34,
+        "max_dd": 12.36,
+        "sharpe": 0.1592
+      }
+    },
+    {
+      "trial_number": 64,
+      "value": 52.6056,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:33.586955",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 3.2131322394640374,
+        "sl_pct": 6.192607651213581,
+        "tp_pct": 9.535388243691063,
+        "cooldown_ticks": 2,
+        "momentum_window": 3,
+        "direction_penalty": 0.23839586235226326,
+        "margin_min": 16.527681160556618
+      },
+      "result_summary": {
+        "total_pnl": 53.2151,
+        "win_rate": 0.5,
+        "n_trades": 48,
+        "max_dd": 12.29,
+        "sharpe": 0.1996
+      }
+    },
+    {
+      "trial_number": 65,
+      "value": 31.918143,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:34.080063",
+      "params": {
+        "min_score": 30,
+        "min_vol_m": 3.1274301814105443,
+        "sl_pct": 6.188868582527739,
+        "tp_pct": 9.597259634730065,
+        "cooldown_ticks": 4,
+        "momentum_window": 3,
+        "direction_penalty": 0.21311276997857712,
+        "margin_min": 18.07296567067083
+      },
+      "result_summary": {
+        "total_pnl": 32.309,
+        "win_rate": 0.4643,
+        "n_trades": 28,
+        "max_dd": 7.91,
+        "sharpe": 0.1884
+      }
+    },
+    {
+      "trial_number": 66,
+      "value": 29.126371,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:34.195017",
+      "params": {
+        "min_score": 30,
+        "min_vol_m": 3.1456568055991903,
+        "sl_pct": 10.7102435731533,
+        "tp_pct": 9.700215033762445,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 2.3179227076563835,
+        "margin_min": 12.07151824625849
+      },
+      "result_summary": {
+        "total_pnl": 29.6273,
+        "win_rate": 0.6071,
+        "n_trades": 28,
+        "max_dd": 10.14,
+        "sharpe": 0.1701
+      }
+    },
+    {
+      "trial_number": 67,
+      "value": 61.734843,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:35.857689",
+      "params": {
+        "min_score": 31,
+        "min_vol_m": 3.2009906926301652,
+        "sl_pct": 11.779008871002587,
+        "tp_pct": 8.079233402573896,
+        "cooldown_ticks": 1,
+        "momentum_window": 1,
+        "direction_penalty": 0.2082635568298925,
+        "margin_min": 17.366766919654154
+      },
+      "result_summary": {
+        "total_pnl": 62.1772,
+        "win_rate": 0.7143,
+        "n_trades": 28,
+        "max_dd": 8.99,
+        "sharpe": 0.3556
+      }
+    },
+    {
+      "trial_number": 68,
+      "value": 45.2732,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:36.483872",
+      "params": {
+        "min_score": 30,
+        "min_vol_m": 2.8530785467213464,
+        "sl_pct": 11.876155374385284,
+        "tp_pct": 9.569434198047558,
+        "cooldown_ticks": 1,
+        "momentum_window": 1,
+        "direction_penalty": 2.329051023237513,
+        "margin_min": 12.407212063496639
+      },
+      "result_summary": {
+        "total_pnl": 45.6409,
+        "win_rate": 0.68,
+        "n_trades": 25,
+        "max_dd": 7.49,
+        "sharpe": 0.29
+      }
+    },
+    {
+      "trial_number": 69,
+      "value": 49.74135,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:36.773630",
+      "params": {
+        "min_score": 30,
+        "min_vol_m": 0.728821928169535,
+        "sl_pct": 11.976474501642928,
+        "tp_pct": 12.21081372673832,
+        "cooldown_ticks": 1,
+        "momentum_window": 1,
+        "direction_penalty": 1.4943925865291887,
+        "margin_min": 13.702406487344415
+      },
+      "result_summary": {
+        "total_pnl": 50.2996,
+        "win_rate": 0.625,
+        "n_trades": 24,
+        "max_dd": 11.29,
+        "sharpe": 0.2703
+      }
+    },
+    {
+      "trial_number": 70,
+      "value": 33.190712,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:37.077135",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.8271584735554685,
+        "sl_pct": 9.815445295030138,
+        "tp_pct": 12.692352011627987,
+        "cooldown_ticks": 1,
+        "momentum_window": 1,
+        "direction_penalty": 1.487756387930115,
+        "margin_min": 16.10975202065105
+      },
+      "result_summary": {
+        "total_pnl": 33.7619,
+        "win_rate": 0.5312,
+        "n_trades": 32,
+        "max_dd": 11.53,
+        "sharpe": 0.1566
+      }
+    },
+    {
+      "trial_number": 71,
+      "value": 117.673419,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:38.545204",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 0.7148409940601144,
+        "sl_pct": 7.746298871167567,
+        "tp_pct": 6.439672955588591,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.2813296579318716,
+        "margin_min": 12.774435820006504
+      },
+      "result_summary": {
+        "total_pnl": 117.9392,
+        "win_rate": 0.7719,
+        "n_trades": 57,
+        "max_dd": 5.47,
+        "sharpe": 0.5599
+      }
+    },
+    {
+      "trial_number": 72,
+      "value": 16.727723,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:39.328023",
+      "params": {
+        "min_score": 41,
+        "min_vol_m": 1.9959736362901148,
+        "sl_pct": 9.865268751997585,
+        "tp_pct": 6.470401315498147,
+        "cooldown_ticks": 5,
+        "momentum_window": 1,
+        "direction_penalty": 1.490967229952195,
+        "margin_min": 13.792847567688177
+      },
+      "result_summary": {
+        "total_pnl": 16.9643,
+        "win_rate": 0.6923,
+        "n_trades": 13,
+        "max_dd": 4.87,
+        "sharpe": 0.2716
+      }
+    },
+    {
+      "trial_number": 73,
+      "value": 29.762125,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:39.593077",
+      "params": {
+        "min_score": 42,
+        "min_vol_m": 1.4808149376642594,
+        "sl_pct": 12.635719799273293,
+        "tp_pct": 6.487401148768484,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.5672117525538916,
+        "margin_min": 15.883240108650272
+      },
+      "result_summary": {
+        "total_pnl": 30.122,
+        "win_rate": 0.8125,
+        "n_trades": 16,
+        "max_dd": 7.36,
+        "sharpe": 0.3286
+      }
+    },
+    {
+      "trial_number": 74,
+      "value": 76.151064,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:39.820200",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 1.3612971403384688,
+        "sl_pct": 5.792566795244268,
+        "tp_pct": 6.546613337451217,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 1.12053140524245,
+        "margin_min": 18.94419978492373
+      },
+      "result_summary": {
+        "total_pnl": 76.3952,
+        "win_rate": 0.6364,
+        "n_trades": 44,
+        "max_dd": 5.01,
+        "sharpe": 0.3645
+      }
+    },
+    {
+      "trial_number": 75,
+      "value": 87.62405500000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:41.293277",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 0.7366646614144641,
+        "sl_pct": 7.444137772014814,
+        "tp_pct": 6.447774016875794,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.6176640657704446,
+        "margin_min": 12.92490654065042
+      },
+      "result_summary": {
+        "total_pnl": 87.9668,
+        "win_rate": 0.7255,
+        "n_trades": 51,
+        "max_dd": 7.0,
+        "sharpe": 0.438
+      }
+    },
+    {
+      "trial_number": 76,
+      "value": 57.985459,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:41.706510",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 0.6791015708613842,
+        "sl_pct": 7.535781322109792,
+        "tp_pct": 5.463105501964403,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.6230863017374544,
+        "margin_min": 12.990446211570369
+      },
+      "result_summary": {
+        "total_pnl": 58.2524,
+        "win_rate": 0.7059,
+        "n_trades": 51,
+        "max_dd": 5.48,
+        "sharpe": 0.3011
+      }
+    },
+    {
+      "trial_number": 77,
+      "value": 54.549637,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:42.309310",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 0.7608366416328827,
+        "sl_pct": 7.537087169218903,
+        "tp_pct": 5.400097618811666,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 1.1553988850116643,
+        "margin_min": 11.108001252381493
+      },
+      "result_summary": {
+        "total_pnl": 54.9021,
+        "win_rate": 0.7037,
+        "n_trades": 54,
+        "max_dd": 7.19,
+        "sharpe": 0.292
+      }
+    },
+    {
+      "trial_number": 78,
+      "value": 98.656168,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:42.990572",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 0.7009247726044904,
+        "sl_pct": 7.661341499034069,
+        "tp_pct": 5.289541837940376,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 0.5500261061087706,
+        "margin_min": 18.77208599933576
+      },
+      "result_summary": {
+        "total_pnl": 99.0028,
+        "win_rate": 0.7368,
+        "n_trades": 57,
+        "max_dd": 7.08,
+        "sharpe": 0.4088
+      }
+    },
+    {
+      "trial_number": 79,
+      "value": 71.916949,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:43.919442",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 0.7137731178964042,
+        "sl_pct": 5.494013666534428,
+        "tp_pct": 6.486809064142426,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.6046932466172246,
+        "margin_min": 18.684109637150055
+      },
+      "result_summary": {
+        "total_pnl": 72.2176,
+        "win_rate": 0.5849,
+        "n_trades": 53,
+        "max_dd": 6.13,
+        "sharpe": 0.287
+      }
+    },
+    {
+      "trial_number": 80,
+      "value": -7.771414000000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:44.560149",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 0.7353143090642563,
+        "sl_pct": 5.692140783290746,
+        "tp_pct": 7.330416088929017,
+        "cooldown_ticks": 4,
+        "momentum_window": 1,
+        "direction_penalty": 0.5279551544954864,
+        "margin_min": 19.09454230860399
+      },
+      "result_summary": {
+        "total_pnl": -6.9626,
+        "win_rate": 0.4186,
+        "n_trades": 43,
+        "max_dd": 16.26,
+        "sharpe": -0.0369
+      }
+    },
+    {
+      "trial_number": 81,
+      "value": 32.917300000000004,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:45.067106",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 1.1341060821116276,
+        "sl_pct": 5.723715582620226,
+        "tp_pct": 7.426178624338854,
+        "cooldown_ticks": 4,
+        "momentum_window": 1,
+        "direction_penalty": 2.241675334489326,
+        "margin_min": 18.93161117374427
+      },
+      "result_summary": {
+        "total_pnl": 33.7473,
+        "win_rate": 0.5,
+        "n_trades": 42,
+        "max_dd": 16.7,
+        "sharpe": 0.1666
+      }
+    },
+    {
+      "trial_number": 82,
+      "value": 101.92676699999998,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:45.589278",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 1.242817027059329,
+        "sl_pct": 5.727891277380839,
+        "tp_pct": 6.264392438308651,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.2434994755849185,
+        "margin_min": 19.134735224608953
+      },
+      "result_summary": {
+        "total_pnl": 102.1596,
+        "win_rate": 0.6667,
+        "n_trades": 57,
+        "max_dd": 4.79,
+        "sharpe": 0.3963
+      }
+    },
+    {
+      "trial_number": 83,
+      "value": 82.31566799999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:46.812170",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 1.1969000945505337,
+        "sl_pct": 8.330216634797996,
+        "tp_pct": 5.306846535835264,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 0.5795506032725775,
+        "margin_min": 19.009374902079973
+      },
+      "result_summary": {
+        "total_pnl": 82.7918,
+        "win_rate": 0.7368,
+        "n_trades": 57,
+        "max_dd": 9.67,
+        "sharpe": 0.3262
+      }
+    },
+    {
+      "trial_number": 84,
+      "value": 75.944355,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:47.556348",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 1.1112394544862867,
+        "sl_pct": 8.327218877718892,
+        "tp_pct": 5.632708475745165,
+        "cooldown_ticks": 3,
+        "momentum_window": 1,
+        "direction_penalty": 0.5670035515557543,
+        "margin_min": 18.289368339846934
+      },
+      "result_summary": {
+        "total_pnl": 76.4351,
+        "win_rate": 0.7255,
+        "n_trades": 51,
+        "max_dd": 9.96,
+        "sharpe": 0.3369
+      }
+    },
+    {
+      "trial_number": 85,
+      "value": 49.911547000000006,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:47.796212",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 0.8818721359995036,
+        "sl_pct": 8.349109055777344,
+        "tp_pct": 5.091229374956251,
+        "cooldown_ticks": 3,
+        "momentum_window": 1,
+        "direction_penalty": 0.5453177551784789,
+        "margin_min": 7.733166142500167
+      },
+      "result_summary": {
+        "total_pnl": 50.2175,
+        "win_rate": 0.7547,
+        "n_trades": 53,
+        "max_dd": 6.27,
+        "sharpe": 0.3382
+      }
+    },
+    {
+      "trial_number": 86,
+      "value": 84.339743,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:48.169320",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 1.3834825327331157,
+        "sl_pct": 8.29104744810189,
+        "tp_pct": 5.010763052776879,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.5041124253208684,
+        "margin_min": 19.978615049652458
+      },
+      "result_summary": {
+        "total_pnl": 84.8166,
+        "win_rate": 0.7143,
+        "n_trades": 63,
+        "max_dd": 9.68,
+        "sharpe": 0.3052
+      }
+    },
+    {
+      "trial_number": 87,
+      "value": 75.317388,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:49.432749",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 1.300414106257918,
+        "sl_pct": 8.212465568415697,
+        "tp_pct": 5.020385649416519,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.5109218874927026,
+        "margin_min": 18.273328371307084
+      },
+      "result_summary": {
+        "total_pnl": 75.8591,
+        "win_rate": 0.7288,
+        "n_trades": 59,
+        "max_dd": 10.98,
+        "sharpe": 0.3008
+      }
+    },
+    {
+      "trial_number": 88,
+      "value": 87.120688,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:50.113955",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 1.4616015732971708,
+        "sl_pct": 7.733966229881708,
+        "tp_pct": 5.032054626978545,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.4766745958607044,
+        "margin_min": 19.85750613554245
+      },
+      "result_summary": {
+        "total_pnl": 87.7425,
+        "win_rate": 0.7188,
+        "n_trades": 64,
+        "max_dd": 12.58,
+        "sharpe": 0.315
+      }
+    },
+    {
+      "trial_number": 89,
+      "value": 50.17399999999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:50.604061",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 1.3051279066995936,
+        "sl_pct": 8.87244512008149,
+        "tp_pct": 5.021673182617487,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.7357227672807722,
+        "margin_min": 19.944130062046778
+      },
+      "result_summary": {
+        "total_pnl": 50.8976,
+        "win_rate": 0.74,
+        "n_trades": 50,
+        "max_dd": 14.62,
+        "sharpe": 0.2342
+      }
+    },
+    {
+      "trial_number": 90,
+      "value": 96.62575100000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:51.029493",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 0.5890260427108216,
+        "sl_pct": 8.91838050058176,
+        "tp_pct": 6.214631221291271,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.5262698005552404,
+        "margin_min": 19.797088335333
+      },
+      "result_summary": {
+        "total_pnl": 97.1883,
+        "win_rate": 0.7451,
+        "n_trades": 51,
+        "max_dd": 11.4,
+        "sharpe": 0.3948
+      }
+    },
+    {
+      "trial_number": 91,
+      "value": 66.974715,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:52.430694",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 0.5669054061033786,
+        "sl_pct": 9.055524083910644,
+        "tp_pct": 6.143017819225029,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.4688321355476033,
+        "margin_min": 14.588414300558862
+      },
+      "result_summary": {
+        "total_pnl": 67.6391,
+        "win_rate": 0.7115,
+        "n_trades": 52,
+        "max_dd": 13.43,
+        "sharpe": 0.2988
+      }
+    },
+    {
+      "trial_number": 92,
+      "value": 67.25793399999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:52.786436",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 0.597231655250688,
+        "sl_pct": 8.933352636819231,
+        "tp_pct": 5.75762265036111,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.7537619355416147,
+        "margin_min": 19.76155597217462
+      },
+      "result_summary": {
+        "total_pnl": 68.1082,
+        "win_rate": 0.7234,
+        "n_trades": 47,
+        "max_dd": 17.15,
+        "sharpe": 0.3259
+      }
+    },
+    {
+      "trial_number": 93,
+      "value": 84.2804,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:53.148619",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 0.5941530779190226,
+        "sl_pct": 9.10035974204567,
+        "tp_pct": 5.843928689035863,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.7158506398754843,
+        "margin_min": 19.48221467283364
+      },
+      "result_summary": {
+        "total_pnl": 84.8434,
+        "win_rate": 0.75,
+        "n_trades": 48,
+        "max_dd": 11.41,
+        "sharpe": 0.3979
+      }
+    },
+    {
+      "trial_number": 94,
+      "value": 112.308641,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:53.887727",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 0.5887138628544969,
+        "sl_pct": 7.660339496145151,
+        "tp_pct": 6.157250264548977,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.4806597280711906,
+        "margin_min": 19.54975244280312
+      },
+      "result_summary": {
+        "total_pnl": 112.9259,
+        "win_rate": 0.7241,
+        "n_trades": 58,
+        "max_dd": 12.49,
+        "sharpe": 0.4202
+      }
+    },
+    {
+      "trial_number": 95,
+      "value": 81.959,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:55.153367",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 1.4571988586043116,
+        "sl_pct": 7.539601679887421,
+        "tp_pct": 5.735655409498285,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.6788795061013913,
+        "margin_min": 19.576509096202468
+      },
+      "result_summary": {
+        "total_pnl": 82.5775,
+        "win_rate": 0.7,
+        "n_trades": 60,
+        "max_dd": 12.51,
+        "sharpe": 0.2988
+      }
+    },
+    {
+      "trial_number": 96,
+      "value": 18.0208,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:55.499902",
+      "params": {
+        "min_score": 52,
+        "min_vol_m": 0.829252087239451,
+        "sl_pct": 7.830845475973906,
+        "tp_pct": 6.937122522348241,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.1951819932482652,
+        "margin_min": 19.4376412280662
+      },
+      "result_summary": {
+        "total_pnl": 18.0108,
+        "win_rate": 1.0,
+        "n_trades": 3,
+        "max_dd": 0,
+        "sharpe": 4779658513589560.0
+      }
+    },
+    {
+      "trial_number": 97,
+      "value": 1.18805,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:55.949300",
+      "params": {
+        "min_score": 48,
+        "min_vol_m": 0.8556194567491715,
+        "sl_pct": 7.6404039428787645,
+        "tp_pct": 6.130458010291456,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.835593504887228,
+        "margin_min": 19.959124849953994
+      },
+      "result_summary": {
+        "total_pnl": 1.5213,
+        "win_rate": 0.625,
+        "n_trades": 8,
+        "max_dd": 6.79,
+        "sharpe": 0.0342
+      }
+    },
+    {
+      "trial_number": 98,
+      "value": 57.38117,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:56.946129",
+      "params": {
+        "min_score": 17,
+        "min_vol_m": 0.8497193080694239,
+        "sl_pct": 7.748840923821049,
+        "tp_pct": 7.065733675762365,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.236464729896642,
+        "margin_min": 19.556914979863393
+      },
+      "result_summary": {
+        "total_pnl": 57.8175,
+        "win_rate": 0.617,
+        "n_trades": 47,
+        "max_dd": 8.85,
+        "sharpe": 0.2424
+      }
+    },
+    {
+      "trial_number": 99,
+      "value": 66.077408,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:57.925781",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 0.8682147814965484,
+        "sl_pct": 7.686982571126096,
+        "tp_pct": 7.151970807092144,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.84755646240556,
+        "margin_min": 5.490100083138517
+      },
+      "result_summary": {
+        "total_pnl": 66.3491,
+        "win_rate": 0.7308,
+        "n_trades": 52,
+        "max_dd": 5.58,
+        "sharpe": 0.4474
+      }
+    },
+    {
+      "trial_number": 100,
+      "value": 19.439110000000003,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:58.277841",
+      "params": {
+        "min_score": 17,
+        "min_vol_m": 1.0192688419453626,
+        "sl_pct": 6.814918495485936,
+        "tp_pct": 6.762614853592519,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.2620539699859843,
+        "margin_min": 5.406600718578395
+      },
+      "result_summary": {
+        "total_pnl": 19.6462,
+        "win_rate": 0.541,
+        "n_trades": 61,
+        "max_dd": 4.25,
+        "sharpe": 0.1131
+      }
+    },
+    {
+      "trial_number": 101,
+      "value": 39.70041,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:58.543922",
+      "params": {
+        "min_score": 17,
+        "min_vol_m": 0.5010958613700528,
+        "sl_pct": 6.597185526252245,
+        "tp_pct": 7.140468283656599,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.265293351509903,
+        "margin_min": 12.658130331676167
+      },
+      "result_summary": {
+        "total_pnl": 39.9915,
+        "win_rate": 0.541,
+        "n_trades": 61,
+        "max_dd": 5.93,
+        "sharpe": 0.1542
+      }
+    },
+    {
+      "trial_number": 102,
+      "value": 54.661924,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:57:59.844039",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 1.006867511860253,
+        "sl_pct": 7.021568790697623,
+        "tp_pct": 6.757663078320956,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.4138323086055133,
+        "margin_min": 5.319627375604735
+      },
+      "result_summary": {
+        "total_pnl": 54.9427,
+        "win_rate": 0.6724,
+        "n_trades": 58,
+        "max_dd": 5.75,
+        "sharpe": 0.3453
+      }
+    },
+    {
+      "trial_number": 103,
+      "value": 72.458667,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:00.824004",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 1.010172558884894,
+        "sl_pct": 6.487414345479134,
+        "tp_pct": 6.695817826388974,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.9357394301956345,
+        "margin_min": 18.53652553510027
+      },
+      "result_summary": {
+        "total_pnl": 72.8805,
+        "win_rate": 0.6167,
+        "n_trades": 60,
+        "max_dd": 8.56,
+        "sharpe": 0.2544
+      }
+    },
+    {
+      "trial_number": 104,
+      "value": 64.497962,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:00.950978",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 0.5029838342504095,
+        "sl_pct": 7.11406594554503,
+        "tp_pct": 6.229047120856429,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.399812244527953,
+        "margin_min": 12.876834270958652
+      },
+      "result_summary": {
+        "total_pnl": 64.8545,
+        "win_rate": 0.6462,
+        "n_trades": 65,
+        "max_dd": 7.26,
+        "sharpe": 0.2458
+      }
+    },
+    {
+      "trial_number": 105,
+      "value": 77.22336299999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:01.284752",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 1.5247674448309485,
+        "sl_pct": 8.059405069429602,
+        "tp_pct": 19.896805389075887,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.4284002095036157,
+        "margin_min": 18.68968134946209
+      },
+      "result_summary": {
+        "total_pnl": 77.5226,
+        "win_rate": 0.5263,
+        "n_trades": 19,
+        "max_dd": 6.09,
+        "sharpe": 0.4302
+      }
+    },
+    {
+      "trial_number": 106,
+      "value": 99.094118,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:02.544869",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 1.5010046699595472,
+        "sl_pct": 6.489115644746499,
+        "tp_pct": 6.219069795410579,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.543750006896803,
+        "margin_min": 19.314021099446972
+      },
+      "result_summary": {
+        "total_pnl": 99.457,
+        "win_rate": 0.6618,
+        "n_trades": 68,
+        "max_dd": 7.39,
+        "sharpe": 0.3061
+      }
+    },
+    {
+      "trial_number": 107,
+      "value": 59.086367,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:03.718440",
+      "params": {
+        "min_score": 27,
+        "min_vol_m": 1.5105692791780976,
+        "sl_pct": 6.445255502193899,
+        "tp_pct": 5.472536450772971,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.5124279164160623,
+        "margin_min": 19.21512333463023
+      },
+      "result_summary": {
+        "total_pnl": 59.6497,
+        "win_rate": 0.6667,
+        "n_trades": 51,
+        "max_dd": 11.4,
+        "sharpe": 0.261
+      }
+    },
+    {
+      "trial_number": 108,
+      "value": 45.390699999999995,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:03.946004",
+      "params": {
+        "min_score": 27,
+        "min_vol_m": 0.6318937151310322,
+        "sl_pct": 7.4186415186140415,
+        "tp_pct": 5.483468353168551,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.4763483587644024,
+        "margin_min": 11.646917265298027
+      },
+      "result_summary": {
+        "total_pnl": 45.6329,
+        "win_rate": 0.68,
+        "n_trades": 50,
+        "max_dd": 4.98,
+        "sharpe": 0.2525
+      }
+    },
+    {
+      "trial_number": 109,
+      "value": 57.9019,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:04.079363",
+      "params": {
+        "min_score": 27,
+        "min_vol_m": 0.6377206058581378,
+        "sl_pct": 7.337796381405559,
+        "tp_pct": 5.4538404469289965,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.470350488242977,
+        "margin_min": 18.04624057685685
+      },
+      "result_summary": {
+        "total_pnl": 58.1841,
+        "win_rate": 0.68,
+        "n_trades": 50,
+        "max_dd": 5.78,
+        "sharpe": 0.2563
+      }
+    },
+    {
+      "trial_number": 110,
+      "value": 62.437267,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:05.191986",
+      "params": {
+        "min_score": 27,
+        "min_vol_m": 0.619165661014202,
+        "sl_pct": 6.096280266574588,
+        "tp_pct": 5.417978673518983,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.5525164799639937,
+        "margin_min": 19.18712563466627
+      },
+      "result_summary": {
+        "total_pnl": 62.9636,
+        "win_rate": 0.6667,
+        "n_trades": 51,
+        "max_dd": 10.66,
+        "sharpe": 0.2844
+      }
+    },
+    {
+      "trial_number": 111,
+      "value": 104.61255799999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:06.867926",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.312717580855582,
+        "sl_pct": 6.091913895678234,
+        "tp_pct": 7.672491591158531,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0786405939733026,
+        "margin_min": 18.935734776357606
+      },
+      "result_summary": {
+        "total_pnl": 104.9466,
+        "win_rate": 0.6458,
+        "n_trades": 48,
+        "max_dd": 6.81,
+        "sharpe": 0.416
+      }
+    },
+    {
+      "trial_number": 112,
+      "value": 59.443616999999996,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:06.889735",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.305797991202025,
+        "sl_pct": 5.110566148600567,
+        "tp_pct": 6.272288759240326,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0853855752014687,
+        "margin_min": 18.85545858511972
+      },
+      "result_summary": {
+        "total_pnl": 59.7311,
+        "win_rate": 0.5517,
+        "n_trades": 58,
+        "max_dd": 5.86,
+        "sharpe": 0.2243
+      }
+    },
+    {
+      "trial_number": 113,
+      "value": 13.048722,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:06.899086",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 1.951529590358203,
+        "sl_pct": 6.096026814551854,
+        "tp_pct": 7.930123789406039,
+        "cooldown_ticks": 6,
+        "momentum_window": 0,
+        "direction_penalty": 2.5853581955234395,
+        "margin_min": 18.910506765172222
+      },
+      "result_summary": {
+        "total_pnl": 13.739,
+        "win_rate": 0.4722,
+        "n_trades": 36,
+        "max_dd": 13.9,
+        "sharpe": 0.0711
+      }
+    },
+    {
+      "trial_number": 114,
+      "value": 138.55743599999997,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:07.738274",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 1.9432898948103334,
+        "sl_pct": 8.01769849570823,
+        "tp_pct": 6.417335909094549,
+        "cooldown_ticks": 2,
+        "momentum_window": 1,
+        "direction_penalty": 2.672477934149333,
+        "margin_min": 19.969310802111263
+      },
+      "result_summary": {
+        "total_pnl": 138.9003,
+        "win_rate": 0.7636,
+        "n_trades": 55,
+        "max_dd": 7.01,
+        "sharpe": 0.5213
+      }
+    },
+    {
+      "trial_number": 115,
+      "value": 102.3346,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:09.647880",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.079175692228141,
+        "sl_pct": 6.6600718211789625,
+        "tp_pct": 7.971187690521621,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.89308006155919,
+        "margin_min": 17.923992668444477
+      },
+      "result_summary": {
+        "total_pnl": 102.6862,
+        "win_rate": 0.64,
+        "n_trades": 50,
+        "max_dd": 7.16,
+        "sharpe": 0.3831
+      }
+    },
+    {
+      "trial_number": 116,
+      "value": 106.60700000000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:09.665851",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.691057252495431,
+        "sl_pct": 6.968673888712794,
+        "tp_pct": 7.838030391278288,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9004471232195177,
+        "margin_min": 18.08681238606937
+      },
+      "result_summary": {
+        "total_pnl": 106.9839,
+        "win_rate": 0.66,
+        "n_trades": 50,
+        "max_dd": 7.67,
+        "sharpe": 0.4
+      }
+    },
+    {
+      "trial_number": 117,
+      "value": 53.512762,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:09.764789",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.124848693018422,
+        "sl_pct": 7.032659283980358,
+        "tp_pct": 17.84547780779138,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9203192544705554,
+        "margin_min": 18.38899975381124
+      },
+      "result_summary": {
+        "total_pnl": 53.9262,
+        "win_rate": 0.4062,
+        "n_trades": 32,
+        "max_dd": 8.35,
+        "sharpe": 0.1924
+      }
+    },
+    {
+      "trial_number": 118,
+      "value": 72.29827800000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:10.300856",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.14227251514021,
+        "sl_pct": 6.856570535196174,
+        "tp_pct": 8.400400814362118,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9097254795664553,
+        "margin_min": 12.161369752153487
+      },
+      "result_summary": {
+        "total_pnl": 72.6302,
+        "win_rate": 0.6078,
+        "n_trades": 51,
+        "max_dd": 6.76,
+        "sharpe": 0.3068
+      }
+    },
+    {
+      "trial_number": 119,
+      "value": 36.562155000000004,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:12.522608",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.1185858445065033,
+        "sl_pct": 5.423553248666151,
+        "tp_pct": 8.305707589063122,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8611429256970218,
+        "margin_min": 16.913264369712696
+      },
+      "result_summary": {
+        "total_pnl": 37.0495,
+        "win_rate": 0.4655,
+        "n_trades": 58,
+        "max_dd": 9.84,
+        "sharpe": 0.1256
+      }
+    },
+    {
+      "trial_number": 120,
+      "value": 107.71490399999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:12.607398",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.135013932629639,
+        "sl_pct": 6.9194209622065035,
+        "tp_pct": 7.558566024581408,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8513804045692503,
+        "margin_min": 17.953478926073867
+      },
+      "result_summary": {
+        "total_pnl": 108.0658,
+        "win_rate": 0.6604,
+        "n_trades": 53,
+        "max_dd": 7.15,
+        "sharpe": 0.3863
+      }
+    },
+    {
+      "trial_number": 121,
+      "value": 61.023367,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:12.664104",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.4579007773906865,
+        "sl_pct": 5.390666019265174,
+        "tp_pct": 7.453709019799856,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.147507511278278,
+        "margin_min": 17.66226086314542
+      },
+      "result_summary": {
+        "total_pnl": 61.2982,
+        "win_rate": 0.5167,
+        "n_trades": 60,
+        "max_dd": 5.6,
+        "sharpe": 0.2055
+      }
+    },
+    {
+      "trial_number": 122,
+      "value": 70.42338199999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:12.938020",
+      "params": {
+        "min_score": 29,
+        "min_vol_m": 2.4827542507094185,
+        "sl_pct": 5.918488716655329,
+        "tp_pct": 7.770421272143221,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.833258399520535,
+        "margin_min": 17.97881529052352
+      },
+      "result_summary": {
+        "total_pnl": 70.8202,
+        "win_rate": 0.5682,
+        "n_trades": 44,
+        "max_dd": 8.05,
+        "sharpe": 0.3057
+      }
+    },
+    {
+      "trial_number": 123,
+      "value": 21.233891,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:15.072592",
+      "params": {
+        "min_score": 12,
+        "min_vol_m": 2.276798456822218,
+        "sl_pct": 6.550275765509087,
+        "tp_pct": 7.599200562534503,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0302065800013063,
+        "margin_min": 18.028307714406488
+      },
+      "result_summary": {
+        "total_pnl": 21.7568,
+        "win_rate": 0.5091,
+        "n_trades": 55,
+        "max_dd": 10.56,
+        "sharpe": 0.0886
+      }
+    },
+    {
+      "trial_number": 124,
+      "value": 95.4232,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:15.218838",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.3449978292234213,
+        "sl_pct": 5.923123873109427,
+        "tp_pct": 7.822189180471543,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.054330449710285,
+        "margin_min": 17.887539654792356
+      },
+      "result_summary": {
+        "total_pnl": 95.8437,
+        "win_rate": 0.6,
+        "n_trades": 50,
+        "max_dd": 8.53,
+        "sharpe": 0.3757
+      }
+    },
+    {
+      "trial_number": 125,
+      "value": 101.839085,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:15.414505",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.2332680606364312,
+        "sl_pct": 5.978693297866415,
+        "tp_pct": 5.931452920277556,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.6702985185311072,
+        "margin_min": 18.17315061086193
+      },
+      "result_summary": {
+        "total_pnl": 102.0837,
+        "win_rate": 0.6885,
+        "n_trades": 61,
+        "max_dd": 5.03,
+        "sharpe": 0.3878
+      }
+    },
+    {
+      "trial_number": 126,
+      "value": 88.77512200000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:15.760341",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.293372215746604,
+        "sl_pct": 6.666823933989729,
+        "tp_pct": 7.705458567036565,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.7015417327479894,
+        "margin_min": 17.312245468916863
+      },
+      "result_summary": {
+        "total_pnl": 89.0386,
+        "win_rate": 0.6522,
+        "n_trades": 46,
+        "max_dd": 5.4,
+        "sharpe": 0.3741
+      }
+    },
+    {
+      "trial_number": 127,
+      "value": 108.369941,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:18.068764",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.3320854987719306,
+        "sl_pct": 6.721154184019086,
+        "tp_pct": 7.516548142871443,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0547889758916944,
+        "margin_min": 18.483627505194434
+      },
+      "result_summary": {
+        "total_pnl": 108.6365,
+        "win_rate": 0.6441,
+        "n_trades": 59,
+        "max_dd": 5.46,
+        "sharpe": 0.3482
+      }
+    },
+    {
+      "trial_number": 128,
+      "value": 46.403870000000005,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:18.151989",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.680582410521972,
+        "sl_pct": 5.016992612635832,
+        "tp_pct": 5.953513916953869,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3268967297747265,
+        "margin_min": 17.477402447927496
+      },
+      "result_summary": {
+        "total_pnl": 46.7451,
+        "win_rate": 0.527,
+        "n_trades": 74,
+        "max_dd": 6.93,
+        "sharpe": 0.1525
+      }
+    },
+    {
+      "trial_number": 129,
+      "value": 78.317886,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:18.336981",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.6878633874006383,
+        "sl_pct": 5.931604886817711,
+        "tp_pct": 5.945445263499739,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.165965715659119,
+        "margin_min": 18.40657914746102
+      },
+      "result_summary": {
+        "total_pnl": 78.7956,
+        "win_rate": 0.6286,
+        "n_trades": 70,
+        "max_dd": 9.68,
+        "sharpe": 0.2591
+      }
+    },
+    {
+      "trial_number": 130,
+      "value": 71.581124,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:18.347608",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 1.744996277811239,
+        "sl_pct": 6.254196628549373,
+        "tp_pct": 5.889998280931882,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.347785602954691,
+        "margin_min": 17.552801803664163
+      },
+      "result_summary": {
+        "total_pnl": 72.0568,
+        "win_rate": 0.6324,
+        "n_trades": 68,
+        "max_dd": 9.64,
+        "sharpe": 0.2497
+      }
+    },
+    {
+      "trial_number": 131,
+      "value": 65.62082699999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:20.652969",
+      "params": {
+        "min_score": 18,
+        "min_vol_m": 1.8618209124951548,
+        "sl_pct": 6.3251518540180385,
+        "tp_pct": 6.374970575775773,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.6963759668453775,
+        "margin_min": 18.466020672712588
+      },
+      "result_summary": {
+        "total_pnl": 66.0533,
+        "win_rate": 0.6027,
+        "n_trades": 73,
+        "max_dd": 8.77,
+        "sharpe": 0.1994
+      }
+    },
+    {
+      "trial_number": 132,
+      "value": 68.23785600000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:21.017765",
+      "params": {
+        "min_score": 18,
+        "min_vol_m": 1.884037100056808,
+        "sl_pct": 6.335543858716461,
+        "tp_pct": 7.319508563063274,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.6219257721710938,
+        "margin_min": 18.451865243225416
+      },
+      "result_summary": {
+        "total_pnl": 68.6418,
+        "win_rate": 0.5556,
+        "n_trades": 63,
+        "max_dd": 8.19,
+        "sharpe": 0.2166
+      }
+    },
+    {
+      "trial_number": 133,
+      "value": 50.745756,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:21.086702",
+      "params": {
+        "min_score": 18,
+        "min_vol_m": 1.8791419519326706,
+        "sl_pct": 6.828336816582674,
+        "tp_pct": 7.250904678781277,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9572816789229803,
+        "margin_min": 18.523146489670868
+      },
+      "result_summary": {
+        "total_pnl": 51.1362,
+        "win_rate": 0.5556,
+        "n_trades": 63,
+        "max_dd": 7.92,
+        "sharpe": 0.1655
+      }
+    },
+    {
+      "trial_number": 134,
+      "value": 55.350267,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:21.095859",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 1.9624257375310017,
+        "sl_pct": 6.816918926473471,
+        "tp_pct": 7.260771771200787,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9375579545045867,
+        "margin_min": 19.321582607693216
+      },
+      "result_summary": {
+        "total_pnl": 55.7091,
+        "win_rate": 0.5667,
+        "n_trades": 60,
+        "max_dd": 7.29,
+        "sharpe": 0.1819
+      }
+    },
+    {
+      "trial_number": 135,
+      "value": 78.91257900000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:23.558432",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.0383238951690728,
+        "sl_pct": 6.913397959020817,
+        "tp_pct": 6.745740062840548,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.7672780750983732,
+        "margin_min": 19.281334157039485
+      },
+      "result_summary": {
+        "total_pnl": 79.2947,
+        "win_rate": 0.6379,
+        "n_trades": 58,
+        "max_dd": 7.77,
+        "sharpe": 0.2701
+      }
+    },
+    {
+      "trial_number": 136,
+      "value": 81.68727899999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:23.806878",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.027720828576173,
+        "sl_pct": 6.89653157276076,
+        "tp_pct": 6.82028336495422,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9813196735369445,
+        "margin_min": 19.301249876612953
+      },
+      "result_summary": {
+        "total_pnl": 82.0684,
+        "win_rate": 0.6379,
+        "n_trades": 58,
+        "max_dd": 7.75,
+        "sharpe": 0.2776
+      }
+    },
+    {
+      "trial_number": 137,
+      "value": 59.930667,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:23.852337",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 2.56632187720562,
+        "sl_pct": 7.245957977569347,
+        "tp_pct": 6.769579140259591,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.743267991175603,
+        "margin_min": 8.679272657541974
+      },
+      "result_summary": {
+        "total_pnl": 60.292,
+        "win_rate": 0.6667,
+        "n_trades": 57,
+        "max_dd": 7.36,
+        "sharpe": 0.3055
+      }
+    },
+    {
+      "trial_number": 138,
+      "value": 97.86368600000002,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:23.854642",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 2.1995631579737664,
+        "sl_pct": 7.214558039242736,
+        "tp_pct": 6.809527408846062,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.7759945566101512,
+        "margin_min": 19.223017086839544
+      },
+      "result_summary": {
+        "total_pnl": 98.2574,
+        "win_rate": 0.6786,
+        "n_trades": 56,
+        "max_dd": 8.01,
+        "sharpe": 0.3388
+      }
+    },
+    {
+      "trial_number": 139,
+      "value": 101.130525,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:26.140664",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 2.211061752416691,
+        "sl_pct": 7.233923825758708,
+        "tp_pct": 6.405035214926935,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.017639920054034,
+        "margin_min": 19.60265870771472
+      },
+      "result_summary": {
+        "total_pnl": 101.5992,
+        "win_rate": 0.6825,
+        "n_trades": 63,
+        "max_dd": 9.51,
+        "sharpe": 0.3201
+      }
+    },
+    {
+      "trial_number": 140,
+      "value": 82.06798699999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:26.392264",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 2.553468575730924,
+        "sl_pct": 5.533254169894832,
+        "tp_pct": 6.307767111899142,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 0.7188630368286304,
+        "margin_min": 16.874152220482056
+      },
+      "result_summary": {
+        "total_pnl": 82.3744,
+        "win_rate": 0.6087,
+        "n_trades": 69,
+        "max_dd": 6.25,
+        "sharpe": 0.2719
+      }
+    },
+    {
+      "trial_number": 141,
+      "value": 89.417729,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:26.510587",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.194264403094511,
+        "sl_pct": 5.6528313609128205,
+        "tp_pct": 6.360126314440512,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.124780758102333,
+        "margin_min": 18.814014857198256
+      },
+      "result_summary": {
+        "total_pnl": 89.7333,
+        "win_rate": 0.6429,
+        "n_trades": 56,
+        "max_dd": 6.44,
+        "sharpe": 0.3441
+      }
+    },
+    {
+      "trial_number": 142,
+      "value": 90.46948099999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:26.733415",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.4106538248750558,
+        "sl_pct": 5.608364996959803,
+        "tp_pct": 6.527449900587108,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.824699912952772,
+        "margin_min": 18.886833670206148
+      },
+      "result_summary": {
+        "total_pnl": 90.7845,
+        "win_rate": 0.6481,
+        "n_trades": 54,
+        "max_dd": 6.43,
+        "sharpe": 0.3601
+      }
+    },
+    {
+      "trial_number": 143,
+      "value": 113.66800899999998,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:28.753150",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.390128406602904,
+        "sl_pct": 5.728061162528272,
+        "tp_pct": 6.461586314716447,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.088856579184129,
+        "margin_min": 18.872423477586818
+      },
+      "result_summary": {
+        "total_pnl": 113.8971,
+        "win_rate": 0.6909,
+        "n_trades": 55,
+        "max_dd": 4.72,
+        "sharpe": 0.4578
+      }
+    },
+    {
+      "trial_number": 144,
+      "value": 106.96199100000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:29.045098",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.378233812614018,
+        "sl_pct": 7.230723968024907,
+        "tp_pct": 6.568860591639828,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8813861686386164,
+        "margin_min": 19.57438905180585
+      },
+      "result_summary": {
+        "total_pnl": 107.2184,
+        "win_rate": 0.7091,
+        "n_trades": 55,
+        "max_dd": 5.27,
+        "sharpe": 0.386
+      }
+    },
+    {
+      "trial_number": 145,
+      "value": 44.71513900000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:29.136891",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.2014305046734974,
+        "sl_pct": 6.585845134728627,
+        "tp_pct": 15.599167480497632,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8190632368245,
+        "margin_min": 19.64082160480629
+      },
+      "result_summary": {
+        "total_pnl": 45.3357,
+        "win_rate": 0.3939,
+        "n_trades": 33,
+        "max_dd": 12.49,
+        "sharpe": 0.1732
+      }
+    },
+    {
+      "trial_number": 146,
+      "value": 47.364762,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:29.525430",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.203789519388137,
+        "sl_pct": 6.558134820715088,
+        "tp_pct": 15.295614947257626,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.010654148054781,
+        "margin_min": 18.20658070577623
+      },
+      "result_summary": {
+        "total_pnl": 47.8692,
+        "win_rate": 0.4062,
+        "n_trades": 32,
+        "max_dd": 10.17,
+        "sharpe": 0.1925
+      }
+    },
+    {
+      "trial_number": 147,
+      "value": 122.342015,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:31.466706",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.3646303369002344,
+        "sl_pct": 6.565769312961439,
+        "tp_pct": 7.0390123010398575,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0085520434131316,
+        "margin_min": 18.21832998443311
+      },
+      "result_summary": {
+        "total_pnl": 122.5779,
+        "win_rate": 0.7115,
+        "n_trades": 52,
+        "max_dd": 4.86,
+        "sharpe": 0.4874
+      }
+    },
+    {
+      "trial_number": 148,
+      "value": 90.267597,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:31.929211",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.389675618926821,
+        "sl_pct": 5.883798618352491,
+        "tp_pct": 5.693023741878896,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0816942408869923,
+        "margin_min": 18.183984892768137
+      },
+      "result_summary": {
+        "total_pnl": 90.5047,
+        "win_rate": 0.6897,
+        "n_trades": 58,
+        "max_dd": 4.88,
+        "sharpe": 0.3702
+      }
+    },
+    {
+      "trial_number": 149,
+      "value": 90.217362,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:31.951536",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 2.08326193697815,
+        "sl_pct": 5.265823892989898,
+        "tp_pct": 7.048242754663215,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0234034627025648,
+        "margin_min": 18.24761277272338
+      },
+      "result_summary": {
+        "total_pnl": 90.4925,
+        "win_rate": 0.5862,
+        "n_trades": 58,
+        "max_dd": 5.62,
+        "sharpe": 0.327
+      }
+    },
+    {
+      "trial_number": 150,
+      "value": 123.468881,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:32.282756",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.343483641048766,
+        "sl_pct": 6.037986268814077,
+        "tp_pct": 7.534799710965706,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0903083959400632,
+        "margin_min": 19.5821985679043
+      },
+      "result_summary": {
+        "total_pnl": 123.7069,
+        "win_rate": 0.6481,
+        "n_trades": 54,
+        "max_dd": 4.89,
+        "sharpe": 0.429
+      }
+    },
+    {
+      "trial_number": 151,
+      "value": 115.23546699999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:34.173201",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.4127075193798797,
+        "sl_pct": 6.111523640613147,
+        "tp_pct": 7.011300095060698,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0573027176353555,
+        "margin_min": 18.202822276820505
+      },
+      "result_summary": {
+        "total_pnl": 115.4703,
+        "win_rate": 0.6667,
+        "n_trades": 57,
+        "max_dd": 4.83,
+        "sharpe": 0.419
+      }
+    },
+    {
+      "trial_number": 152,
+      "value": 106.818409,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:34.573374",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.765770041563357,
+        "sl_pct": 7.2535177459254045,
+        "tp_pct": 7.049666306559176,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8830487129392697,
+        "margin_min": 17.165957200534162
+      },
+      "result_summary": {
+        "total_pnl": 107.141,
+        "win_rate": 0.6909,
+        "n_trades": 55,
+        "max_dd": 6.59,
+        "sharpe": 0.3957
+      }
+    },
+    {
+      "trial_number": 153,
+      "value": 83.258557,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:34.787446",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 2.3916290567385534,
+        "sl_pct": 6.100654859300283,
+        "tp_pct": 8.193118732983901,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.1811828084234186,
+        "margin_min": 17.854658605657665
+      },
+      "result_summary": {
+        "total_pnl": 83.6101,
+        "win_rate": 0.5957,
+        "n_trades": 47,
+        "max_dd": 7.15,
+        "sharpe": 0.3276
+      }
+    },
+    {
+      "trial_number": 154,
+      "value": 56.137373,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:35.033561",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.408750158118517,
+        "sl_pct": 11.557973187676982,
+        "tp_pct": 8.146196207939035,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9085235094685356,
+        "margin_min": 19.996848068925203
+      },
+      "result_summary": {
+        "total_pnl": 56.5863,
+        "win_rate": 0.7073,
+        "n_trades": 41,
+        "max_dd": 9.12,
+        "sharpe": 0.2082
+      }
+    },
+    {
+      "trial_number": 155,
+      "value": 93.10636199999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:37.137278",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.4361140878388055,
+        "sl_pct": 6.0814078295400344,
+        "tp_pct": 8.14496390257017,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.878075237854661,
+        "margin_min": 17.854747999429172
+      },
+      "result_summary": {
+        "total_pnl": 93.4319,
+        "win_rate": 0.5962,
+        "n_trades": 52,
+        "max_dd": 6.63,
+        "sharpe": 0.3368
+      }
+    },
+    {
+      "trial_number": 156,
+      "value": 103.24916400000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:37.488903",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.756870107660419,
+        "sl_pct": 6.204197336429645,
+        "tp_pct": 7.503402520607694,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.202127767521237,
+        "margin_min": 17.040126658802905
+      },
+      "result_summary": {
+        "total_pnl": 103.4753,
+        "win_rate": 0.6364,
+        "n_trades": 55,
+        "max_dd": 4.65,
+        "sharpe": 0.3768
+      }
+    },
+    {
+      "trial_number": 157,
+      "value": 115.285839,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:37.533220",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.76046088391769,
+        "sl_pct": 7.968031641453691,
+        "tp_pct": 7.998862028168286,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8716492004153786,
+        "margin_min": 17.08658822151424
+      },
+      "result_summary": {
+        "total_pnl": 115.7289,
+        "win_rate": 0.6939,
+        "n_trades": 49,
+        "max_dd": 9.0,
+        "sharpe": 0.4399
+      }
+    },
+    {
+      "trial_number": 158,
+      "value": 101.58282700000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:37.753001",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.7620552393419366,
+        "sl_pct": 12.300321577747471,
+        "tp_pct": 7.445620227315786,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.100443008388798,
+        "margin_min": 17.647682942190638
+      },
+      "result_summary": {
+        "total_pnl": 102.0241,
+        "win_rate": 0.7727,
+        "n_trades": 44,
+        "max_dd": 8.98,
+        "sharpe": 0.3833
+      }
+    },
+    {
+      "trial_number": 159,
+      "value": 93.552483,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:39.632812",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 2.7684983153585883,
+        "sl_pct": 6.381682595999005,
+        "tp_pct": 7.621874177846905,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.096615828436645,
+        "margin_min": 18.994076827853046
+      },
+      "result_summary": {
+        "total_pnl": 93.9216,
+        "win_rate": 0.6383,
+        "n_trades": 47,
+        "max_dd": 7.51,
+        "sharpe": 0.3777
+      }
+    },
+    {
+      "trial_number": 160,
+      "value": 90.77778199999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:40.032619",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.774970715520477,
+        "sl_pct": 7.057846291779918,
+        "tp_pct": 7.5110120242811576,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.1324651472177734,
+        "margin_min": 17.49769524948505
+      },
+      "result_summary": {
+        "total_pnl": 91.0821,
+        "win_rate": 0.6182,
+        "n_trades": 55,
+        "max_dd": 6.21,
+        "sharpe": 0.3197
+      }
+    },
+    {
+      "trial_number": 161,
+      "value": 90.252618,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:40.267974",
+      "params": {
+        "min_score": 26,
+        "min_vol_m": 2.6459210475836423,
+        "sl_pct": 8.040845253775114,
+        "tp_pct": 7.487695686499515,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.108525033612953,
+        "margin_min": 17.704961768541203
+      },
+      "result_summary": {
+        "total_pnl": 90.6953,
+        "win_rate": 0.6818,
+        "n_trades": 44,
+        "max_dd": 8.99,
+        "sharpe": 0.3803
+      }
+    },
+    {
+      "trial_number": 162,
+      "value": 110.467692,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:40.637659",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.9159721416781763,
+        "sl_pct": 7.848784191396926,
+        "tp_pct": 7.558645227053914,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.208342319217225,
+        "margin_min": 17.112621430134425
+      },
+      "result_summary": {
+        "total_pnl": 110.8864,
+        "win_rate": 0.6792,
+        "n_trades": 53,
+        "max_dd": 8.51,
+        "sharpe": 0.4053
+      }
+    },
+    {
+      "trial_number": 163,
+      "value": 102.683739,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:42.239962",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.613915191002869,
+        "sl_pct": 7.947568268874825,
+        "tp_pct": 8.595504315508405,
+        "cooldown_ticks": 1,
+        "momentum_window": 0,
+        "direction_penalty": 2.1850046821382283,
+        "margin_min": 17.11670529209755
+      },
+      "result_summary": {
+        "total_pnl": 103.0545,
+        "win_rate": 0.6739,
+        "n_trades": 46,
+        "max_dd": 7.55,
+        "sharpe": 0.3998
+      }
+    },
+    {
+      "trial_number": 164,
+      "value": 92.57591799999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:42.617358",
+      "params": {
+        "min_score": 25,
+        "min_vol_m": 2.9096186206982195,
+        "sl_pct": 8.06983305667973,
+        "tp_pct": 7.911664008860775,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.964143118082989,
+        "margin_min": 17.211330715129055
+      },
+      "result_summary": {
+        "total_pnl": 92.9361,
+        "win_rate": 0.6818,
+        "n_trades": 44,
+        "max_dd": 7.34,
+        "sharpe": 0.3841
+      }
+    },
+    {
+      "trial_number": 165,
+      "value": 102.156567,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:42.997365",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 3.0410835371700364,
+        "sl_pct": 7.439331418996309,
+        "tp_pct": 8.547605052702313,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9767232517563096,
+        "margin_min": 17.217943963462233
+      },
+      "result_summary": {
+        "total_pnl": 102.5514,
+        "win_rate": 0.6667,
+        "n_trades": 45,
+        "max_dd": 8.03,
+        "sharpe": 0.4076
+      }
+    },
+    {
+      "trial_number": 166,
+      "value": 88.833644,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:43.702657",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.5151231804988226,
+        "sl_pct": 7.428927474523988,
+        "tp_pct": 8.544555450421862,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.2128699956025324,
+        "margin_min": 17.0031929048572
+      },
+      "result_summary": {
+        "total_pnl": 89.0922,
+        "win_rate": 0.6444,
+        "n_trades": 45,
+        "max_dd": 5.3,
+        "sharpe": 0.3575
+      }
+    },
+    {
+      "trial_number": 167,
+      "value": 116.39455199999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:44.833965",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.8351672941510073,
+        "sl_pct": 7.470819778962392,
+        "tp_pct": 7.138975923723363,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.2231384646568615,
+        "margin_min": 17.279367817060677
+      },
+      "result_summary": {
+        "total_pnl": 116.7447,
+        "win_rate": 0.6852,
+        "n_trades": 54,
+        "max_dd": 7.14,
+        "sharpe": 0.4481
+      }
+    },
+    {
+      "trial_number": 168,
+      "value": 98.44858,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:45.388819",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 2.975568762281201,
+        "sl_pct": 7.455817838556754,
+        "tp_pct": 7.0436451387227,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.280558599674581,
+        "margin_min": 16.611481241369564
+      },
+      "result_summary": {
+        "total_pnl": 98.7923,
+        "win_rate": 0.678,
+        "n_trades": 59,
+        "max_dd": 7.01,
+        "sharpe": 0.3506
+      }
+    },
+    {
+      "trial_number": 169,
+      "value": 16.940485999999996,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:45.738754",
+      "params": {
+        "min_score": 16,
+        "min_vol_m": 3.0258936320504266,
+        "sl_pct": 12.67666163894518,
+        "tp_pct": 7.266103772435278,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.253509349038073,
+        "margin_min": 16.862373495975437
+      },
+      "result_summary": {
+        "total_pnl": 17.58,
+        "win_rate": 0.6486,
+        "n_trades": 37,
+        "max_dd": 12.92,
+        "sharpe": 0.0756
+      }
+    },
+    {
+      "trial_number": 170,
+      "value": 104.869549,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:46.417015",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 3.0231236354688806,
+        "sl_pct": 7.755527103276283,
+        "tp_pct": 7.039908339447889,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.2851145358517586,
+        "margin_min": 16.728383240120305
+      },
+      "result_summary": {
+        "total_pnl": 105.2706,
+        "win_rate": 0.6949,
+        "n_trades": 59,
+        "max_dd": 8.16,
+        "sharpe": 0.3713
+      }
+    },
+    {
+      "trial_number": 171,
+      "value": 3.392463,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:47.997248",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.5233333857462736,
+        "sl_pct": 7.6983148549556395,
+        "tp_pct": 7.25090338611302,
+        "cooldown_ticks": 5,
+        "momentum_window": 0,
+        "direction_penalty": 2.0551514159300868,
+        "margin_min": 18.6424904847718
+      },
+      "result_summary": {
+        "total_pnl": 4.0647,
+        "win_rate": 0.5263,
+        "n_trades": 38,
+        "max_dd": 13.55,
+        "sharpe": 0.0206
+      }
+    },
+    {
+      "trial_number": 172,
+      "value": 80.759957,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:48.013607",
+      "params": {
+        "min_score": 16,
+        "min_vol_m": 2.889734145080449,
+        "sl_pct": 7.914873767524951,
+        "tp_pct": 7.1193765543203185,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.046363985303267,
+        "margin_min": 18.599389406735572
+      },
+      "result_summary": {
+        "total_pnl": 81.2414,
+        "win_rate": 0.6557,
+        "n_trades": 61,
+        "max_dd": 9.76,
+        "sharpe": 0.2656
+      }
+    },
+    {
+      "trial_number": 173,
+      "value": 50.197732,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:48.517768",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.868848507543061,
+        "sl_pct": 17.97143660741906,
+        "tp_pct": 6.995034585237186,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0382247587745392,
+        "margin_min": 15.369483769442056
+      },
+      "result_summary": {
+        "total_pnl": 51.2331,
+        "win_rate": 0.7632,
+        "n_trades": 38,
+        "max_dd": 20.86,
+        "sharpe": 0.2189
+      }
+    },
+    {
+      "trial_number": 174,
+      "value": 101.378849,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:49.440784",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 2.8395118168879603,
+        "sl_pct": 7.825663924601144,
+        "tp_pct": 6.979450622681394,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.0581562181743474,
+        "margin_min": 16.247778143828214
+      },
+      "result_summary": {
+        "total_pnl": 101.7809,
+        "win_rate": 0.6949,
+        "n_trades": 59,
+        "max_dd": 8.18,
+        "sharpe": 0.3639
+      }
+    },
+    {
+      "trial_number": 175,
+      "value": 105.008043,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:50.561630",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 3.1325738499055005,
+        "sl_pct": 8.495749841874526,
+        "tp_pct": 6.636904279621225,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.065333919683013,
+        "margin_min": 16.17187058864327
+      },
+      "result_summary": {
+        "total_pnl": 105.3799,
+        "win_rate": 0.7143,
+        "n_trades": 56,
+        "max_dd": 7.58,
+        "sharpe": 0.4099
+      }
+    },
+    {
+      "trial_number": 176,
+      "value": 88.129652,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:50.601871",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 2.853509820173187,
+        "sl_pct": 8.57774250234941,
+        "tp_pct": 6.954130967301682,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.373796262476075,
+        "margin_min": 16.20809872404618
+      },
+      "result_summary": {
+        "total_pnl": 88.6798,
+        "win_rate": 0.6852,
+        "n_trades": 54,
+        "max_dd": 11.14,
+        "sharpe": 0.3365
+      }
+    },
+    {
+      "trial_number": 177,
+      "value": 55.927671,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:51.572445",
+      "params": {
+        "min_score": 19,
+        "min_vol_m": 3.1128121249028893,
+        "sl_pct": 7.096755896826164,
+        "tp_pct": 6.668863773643976,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8668267284788553,
+        "margin_min": 17.564742177029494
+      },
+      "result_summary": {
+        "total_pnl": 56.2514,
+        "win_rate": 0.6271,
+        "n_trades": 59,
+        "max_dd": 6.6,
+        "sharpe": 0.2005
+      }
+    },
+    {
+      "trial_number": 178,
+      "value": 96.877255,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:52.486947",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 2.3493914449592634,
+        "sl_pct": 8.596203645051647,
+        "tp_pct": 6.638884710099501,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3117752209024003,
+        "margin_min": 17.39706921418645
+      },
+      "result_summary": {
+        "total_pnl": 97.488,
+        "win_rate": 0.7255,
+        "n_trades": 51,
+        "max_dd": 12.36,
+        "sharpe": 0.3986
+      }
+    },
+    {
+      "trial_number": 179,
+      "value": 106.73305799999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:53.152634",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.376982164166128,
+        "sl_pct": 8.297821293289655,
+        "tp_pct": 6.657209393517067,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8599855986051383,
+        "margin_min": 16.663030552943123
+      },
+      "result_summary": {
+        "total_pnl": 107.2027,
+        "win_rate": 0.7358,
+        "n_trades": 53,
+        "max_dd": 9.54,
+        "sharpe": 0.4371
+      }
+    },
+    {
+      "trial_number": 180,
+      "value": 110.234069,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:53.159117",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 3.11569123134975,
+        "sl_pct": 8.247620444778248,
+        "tp_pct": 6.594633328047174,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3055466531742264,
+        "margin_min": 17.433996167399858
+      },
+      "result_summary": {
+        "total_pnl": 110.6515,
+        "win_rate": 0.7069,
+        "n_trades": 58,
+        "max_dd": 8.49,
+        "sharpe": 0.4052
+      }
+    },
+    {
+      "trial_number": 181,
+      "value": 121.632568,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:54.558286",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.2306180492595633,
+        "sl_pct": 7.674864468451511,
+        "tp_pct": 6.526201180085832,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3012168920324503,
+        "margin_min": 17.35056086366353
+      },
+      "result_summary": {
+        "total_pnl": 122.1987,
+        "win_rate": 0.7368,
+        "n_trades": 57,
+        "max_dd": 11.47,
+        "sharpe": 0.4665
+      }
+    },
+    {
+      "trial_number": 182,
+      "value": 96.717993,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:55.245620",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 3.3931532365681805,
+        "sl_pct": 8.381933654646256,
+        "tp_pct": 6.575633378766142,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9411449192362478,
+        "margin_min": 16.552526952268554
+      },
+      "result_summary": {
+        "total_pnl": 97.0978,
+        "win_rate": 0.7193,
+        "n_trades": 57,
+        "max_dd": 7.74,
+        "sharpe": 0.3686
+      }
+    },
+    {
+      "trial_number": 183,
+      "value": 97.19254099999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:55.874609",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.6404234656976975,
+        "sl_pct": 8.350575190275594,
+        "tp_pct": 6.463727736164229,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9281355438484906,
+        "margin_min": 15.91205421431441
+      },
+      "result_summary": {
+        "total_pnl": 97.5703,
+        "win_rate": 0.7241,
+        "n_trades": 58,
+        "max_dd": 7.7,
+        "sharpe": 0.3745
+      }
+    },
+    {
+      "trial_number": 184,
+      "value": 94.289693,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:56.044627",
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 3.27960545414234,
+        "sl_pct": 8.350701810885443,
+        "tp_pct": 6.504119636564123,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.9401350671185815,
+        "margin_min": 16.435081452925346
+      },
+      "result_summary": {
+        "total_pnl": 94.6695,
+        "win_rate": 0.7193,
+        "n_trades": 57,
+        "max_dd": 7.74,
+        "sharpe": 0.3613
+      }
+    },
+    {
+      "trial_number": 185,
+      "value": 81.614113,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:57.197185",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.3579577878712508,
+        "sl_pct": 7.303378460823467,
+        "tp_pct": 6.5320022644066755,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 0.9098208793606166,
+        "margin_min": 17.34383162600425
+      },
+      "result_summary": {
+        "total_pnl": 81.9555,
+        "win_rate": 0.6613,
+        "n_trades": 62,
+        "max_dd": 6.96,
+        "sharpe": 0.2654
+      }
+    },
+    {
+      "trial_number": 186,
+      "value": 104.15491399999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:57.741480",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.2771246935361944,
+        "sl_pct": 8.146640177203649,
+        "tp_pct": 6.071412668166429,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.1423362263649603,
+        "margin_min": 17.219987246017364
+      },
+      "result_summary": {
+        "total_pnl": 104.5435,
+        "win_rate": 0.7414,
+        "n_trades": 58,
+        "max_dd": 7.92,
+        "sharpe": 0.395
+      }
+    },
+    {
+      "trial_number": 187,
+      "value": 99.042133,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:58.844934",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.316370762269626,
+        "sl_pct": 8.15866384105586,
+        "tp_pct": 6.029655428910981,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 0.9388409324730775,
+        "margin_min": 17.400331849375956
+      },
+      "result_summary": {
+        "total_pnl": 99.4368,
+        "win_rate": 0.7333,
+        "n_trades": 60,
+        "max_dd": 8.04,
+        "sharpe": 0.3521
+      }
+    },
+    {
+      "trial_number": 188,
+      "value": 70.965021,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:59.325570",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 3.26655528269612,
+        "sl_pct": 7.271714460515957,
+        "tp_pct": 6.018402604512328,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.1613340758883326,
+        "margin_min": 17.39501249030299
+      },
+      "result_summary": {
+        "total_pnl": 71.3643,
+        "win_rate": 0.6721,
+        "n_trades": 61,
+        "max_dd": 8.12,
+        "sharpe": 0.2612
+      }
+    },
+    {
+      "trial_number": 189,
+      "value": 108.30069999999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:58:59.825427",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.260666043652412,
+        "sl_pct": 8.15643145195199,
+        "tp_pct": 6.05880110057079,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.375547274057948,
+        "margin_min": 17.94071015372224
+      },
+      "result_summary": {
+        "total_pnl": 108.7017,
+        "win_rate": 0.75,
+        "n_trades": 56,
+        "max_dd": 8.17,
+        "sharpe": 0.4265
+      }
+    },
+    {
+      "trial_number": 190,
+      "value": 126.821123,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:00.438352",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 3.4269394573544316,
+        "sl_pct": 7.5437071708087915,
+        "tp_pct": 7.917172722643096,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.378061171521531,
+        "margin_min": 17.884926408372692
+      },
+      "result_summary": {
+        "total_pnl": 127.1497,
+        "win_rate": 0.6923,
+        "n_trades": 52,
+        "max_dd": 6.71,
+        "sharpe": 0.468
+      }
+    },
+    {
+      "trial_number": 191,
+      "value": 97.40254599999999,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:01.620446",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 3.5004174576242777,
+        "sl_pct": 7.594303154557816,
+        "tp_pct": 7.8324053200769885,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 1.8234703593749677,
+        "margin_min": 18.070246385275315
+      },
+      "result_summary": {
+        "total_pnl": 97.7362,
+        "win_rate": 0.6346,
+        "n_trades": 52,
+        "max_dd": 6.8,
+        "sharpe": 0.3426
+      }
+    },
+    {
+      "trial_number": 192,
+      "value": 100.911267,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:02.193033",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.70600880287381,
+        "sl_pct": 7.58578034235726,
+        "tp_pct": 7.81264031345753,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.6636193221177398,
+        "margin_min": 17.907136683914114
+      },
+      "result_summary": {
+        "total_pnl": 101.2201,
+        "win_rate": 0.6667,
+        "n_trades": 48,
+        "max_dd": 6.31,
+        "sharpe": 0.3818
+      }
+    },
+    {
+      "trial_number": 193,
+      "value": 120.3763,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:02.546767",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 4.9986685536339115,
+        "sl_pct": 7.622647329835189,
+        "tp_pct": 6.875445403644389,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3960561173780865,
+        "margin_min": 17.79414121507841
+      },
+      "result_summary": {
+        "total_pnl": 120.6754,
+        "win_rate": 0.74,
+        "n_trades": 50,
+        "max_dd": 6.13,
+        "sharpe": 0.5049
+      }
+    },
+    {
+      "trial_number": 194,
+      "value": 97.921723,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:03.437251",
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 3.5549539152817675,
+        "sl_pct": 7.367542003286092,
+        "tp_pct": 6.905584532139908,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.4196137021359014,
+        "margin_min": 17.845410127530847
+      },
+      "result_summary": {
+        "total_pnl": 98.1798,
+        "win_rate": 0.6923,
+        "n_trades": 52,
+        "max_dd": 5.3,
+        "sharpe": 0.3925
+      }
+    },
+    {
+      "trial_number": 195,
+      "value": 124.98174700000001,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:04.661153",
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 3.148325496265444,
+        "sl_pct": 7.876371898661212,
+        "tp_pct": 6.7655076472354345,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3842149254108063,
+        "margin_min": 17.732235273069
+      },
+      "result_summary": {
+        "total_pnl": 125.2976,
+        "win_rate": 0.7647,
+        "n_trades": 51,
+        "max_dd": 6.47,
+        "sharpe": 0.5142
+      }
+    },
+    {
+      "trial_number": 196,
+      "value": 116.642673,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:04.685254",
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.4338455102769307,
+        "sl_pct": 7.927298063719334,
+        "tp_pct": 6.828027428598005,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3937752968847423,
+        "margin_min": 16.85730181437144
+      },
+      "result_summary": {
+        "total_pnl": 117.2149,
+        "win_rate": 0.7273,
+        "n_trades": 55,
+        "max_dd": 11.59,
+        "sharpe": 0.4496
+      }
+    },
+    {
+      "trial_number": 197,
+      "value": 119.969392,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:05.197566",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 3.185062529124099,
+        "sl_pct": 7.832434646854024,
+        "tp_pct": 7.35944673946849,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.4057349509867123,
+        "margin_min": 17.773141057892943
+      },
+      "result_summary": {
+        "total_pnl": 120.2696,
+        "win_rate": 0.7292,
+        "n_trades": 48,
+        "max_dd": 6.15,
+        "sharpe": 0.4947
+      }
+    },
+    {
+      "trial_number": 198,
+      "value": 113.857792,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:06.440852",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 4.915386651240822,
+        "sl_pct": 7.879668304367758,
+        "tp_pct": 7.147760250835708,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3953696597027165,
+        "margin_min": 17.722864886751005
+      },
+      "result_summary": {
+        "total_pnl": 114.1655,
+        "win_rate": 0.7292,
+        "n_trades": 48,
+        "max_dd": 6.3,
+        "sharpe": 0.4758
+      }
+    },
+    {
+      "trial_number": 199,
+      "value": 112.076634,
+      "state": "COMPLETE",
+      "datetime": "2026-04-16T11:59:07.464610",
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 4.141679854751042,
+        "sl_pct": 7.912635506750025,
+        "tp_pct": 7.315808225775757,
+        "cooldown_ticks": 2,
+        "momentum_window": 0,
+        "direction_penalty": 2.3625328626431337,
+        "margin_min": 17.715308102944263
+      },
+      "result_summary": {
+        "total_pnl": 112.3824,
+        "win_rate": 0.7234,
+        "n_trades": 47,
+        "max_dd": 6.26,
+        "sharpe": 0.4692
+      }
+    }
+  ]
+}
