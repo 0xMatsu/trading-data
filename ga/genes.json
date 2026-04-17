@@ -2,28 +2,27 @@
   "best_result": {
     "interval": "15m",
     "params": {
-      "min_score": 34,
-      "min_vol_m": 0.7385619305276476,
-      "sl_pct": 15.122358257652886,
-      "tp_pct": 5.001850911716808,
+      "min_score": 20,
+      "min_vol_m": 2.767471976037001,
+      "trail_from_liq": 0.5852868092130703,
       "cooldown_ticks": 3,
+      "momentum_window": 1,
+      "direction_penalty": 2.7423494823685983,
+      "margin_min": 63.21517112504443,
       "freq_cap_hours": 8,
-      "freq_cap_max": 10,
-      "momentum_window": 0,
-      "direction_penalty": 3.7209524131165406e-05,
-      "margin_min": 19.06498478298312
+      "freq_cap_max": 2
     },
-    "total_pnl": 85.5246,
-    "win_rate": 0.8846,
-    "max_dd": 3.41,
-    "sharpe": 1.3021,
-    "n_trades": 26,
-    "timestamp": "2026-04-16T15:47:31.246982"
+    "total_pnl": 679.9572,
+    "win_rate": 0.5938,
+    "max_dd": 7.91,
+    "sharpe": 0.5261,
+    "n_trades": 32,
+    "timestamp": "2026-04-17T13:13:03.080155"
   },
   "optuna_study": {
     "n_trials": 200,
-    "elapsed_s": 72,
-    "best_value": 85.36294600000001,
+    "elapsed_s": 98,
+    "best_value": 679.567638,
     "n_completed": 200
   },
   "history": {
@@ -80,6 +79,313 @@
       "max_dd": 3.41,
       "sharpe": 1.3021,
       "n_trades": 26,
+      "interval": "15m"
+    },
+    "15m_20260417_0321": {
+      "params": {
+        "min_score": 42,
+        "min_vol_m": 2.715927052542655,
+        "sl_pct": 13.905376497029668,
+        "tp_pct": 18.86318423571811,
+        "cooldown_ticks": 12,
+        "momentum_window": 1,
+        "direction_penalty": 1.014534330871731,
+        "margin_min": 17.220637678348062,
+        "freq_cap_hours": 4,
+        "freq_cap_max": 7
+      },
+      "total_pnl": 0.0,
+      "win_rate": 0,
+      "max_dd": 0,
+      "sharpe": 0.0,
+      "n_trades": 0,
+      "interval": "15m"
+    },
+    "15m_20260417_0322": {
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.7986531454896477,
+        "sl_pct": 15.718189967525547,
+        "tp_pct": 11.458458746905025,
+        "cooldown_ticks": 5,
+        "momentum_window": 3,
+        "direction_penalty": 0.6073855297285087,
+        "margin_min": 19.98956173381824,
+        "freq_cap_hours": 1,
+        "freq_cap_max": 10
+      },
+      "total_pnl": 0.0,
+      "win_rate": 0,
+      "max_dd": 0,
+      "sharpe": 0.0,
+      "n_trades": 0,
+      "interval": "15m"
+    },
+    "15m_20260417_0328": {
+      "params": {
+        "min_score": 31,
+        "min_vol_m": 3.1826154665575457,
+        "sl_pct": 7.076168781956204,
+        "tp_pct": 19.73936795777051,
+        "cooldown_ticks": 1,
+        "momentum_window": 5,
+        "direction_penalty": 1.8614725044808105,
+        "margin_min": 19.80897842993841,
+        "freq_cap_hours": 10,
+        "freq_cap_max": 10
+      },
+      "total_pnl": 89.6974,
+      "win_rate": 0.8889,
+      "max_dd": 2.26,
+      "sharpe": 1.1723,
+      "n_trades": 9,
+      "interval": "15m"
+    },
+    "15m_20260417_0344": {
+      "params": {
+        "min_score": 33,
+        "min_vol_m": 1.2080341621944952,
+        "trail_from_liq": 0.3723000266523463,
+        "cooldown_ticks": 7,
+        "momentum_window": 4,
+        "direction_penalty": 0.9599028459124115,
+        "margin_min": 19.99923237245457,
+        "freq_cap_hours": 9,
+        "freq_cap_max": 5
+      },
+      "total_pnl": 94.381,
+      "win_rate": 0.8571,
+      "max_dd": 1.93,
+      "sharpe": 1.1894,
+      "n_trades": 7,
+      "interval": "15m"
+    },
+    "15m_20260417_0902": {
+      "params": {
+        "min_score": 40,
+        "min_vol_m": 1.7306276063156507,
+        "trail_from_liq": 0.48529499501492895,
+        "cooldown_ticks": 10,
+        "momentum_window": 5,
+        "direction_penalty": 0.3690401884700948,
+        "margin_min": 19.888632240180957,
+        "freq_cap_hours": 2,
+        "freq_cap_max": 11
+      },
+      "total_pnl": 0.0,
+      "win_rate": 0,
+      "max_dd": 0,
+      "sharpe": 0.0,
+      "n_trades": 0,
+      "interval": "15m"
+    },
+    "15m_20260417_0904": {
+      "params": {
+        "min_score": 32,
+        "min_vol_m": 4.826948114133497,
+        "trail_from_liq": 0.7091036615056546,
+        "cooldown_ticks": 7,
+        "momentum_window": 1,
+        "direction_penalty": 1.0605392511401786,
+        "margin_min": 19.997895487419495,
+        "freq_cap_hours": 9,
+        "freq_cap_max": 2
+      },
+      "total_pnl": 120.7051,
+      "win_rate": 0.5385,
+      "max_dd": 5.21,
+      "sharpe": 0.6547,
+      "n_trades": 13,
+      "interval": "15m"
+    },
+    "15m_20260417_1152": {
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 2.8695556058226046,
+        "trail_from_liq": 0.39724718817859844,
+        "cooldown_ticks": 10,
+        "momentum_window": 2,
+        "direction_penalty": 1.271763094837898,
+        "margin_min": 5.2276061468707375,
+        "freq_cap_hours": 12,
+        "freq_cap_max": 4
+      },
+      "total_pnl": 2.3437,
+      "win_rate": 0.6667,
+      "max_dd": 1.37,
+      "sharpe": 0.0769,
+      "n_trades": 3,
+      "interval": "15m"
+    },
+    "15m_20260417_1153": {
+      "params": {
+        "min_score": 21,
+        "min_vol_m": 1.5599821940103262,
+        "trail_from_liq": 0.7023797453288333,
+        "cooldown_ticks": 4,
+        "momentum_window": 2,
+        "direction_penalty": 0.774022400778329,
+        "margin_min": 13.979695253097873,
+        "freq_cap_hours": 2,
+        "freq_cap_max": 11
+      },
+      "total_pnl": 2.3437,
+      "win_rate": 0.6667,
+      "max_dd": 1.37,
+      "sharpe": 0.0769,
+      "n_trades": 3,
+      "interval": "15m"
+    },
+    "15m_20260417_1154": {
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.5106533905561035,
+        "trail_from_liq": 0.5157246961221884,
+        "cooldown_ticks": 4,
+        "momentum_window": 4,
+        "direction_penalty": 1.0806234669685573,
+        "margin_min": 6.192917142243166,
+        "freq_cap_hours": 10,
+        "freq_cap_max": 12
+      },
+      "total_pnl": 2.3437,
+      "win_rate": 0.6667,
+      "max_dd": 1.37,
+      "sharpe": 0.0769,
+      "n_trades": 3,
+      "interval": "15m"
+    },
+    "15m_20260417_1209": {
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.222147261627984,
+        "trail_from_liq": 0.5832144086883179,
+        "cooldown_ticks": 10,
+        "momentum_window": 4,
+        "direction_penalty": 2.7452682289781394,
+        "margin_min": 15.923198672217081,
+        "freq_cap_hours": 12,
+        "freq_cap_max": 8
+      },
+      "total_pnl": 390.4016,
+      "win_rate": 0.6429,
+      "max_dd": 3.96,
+      "sharpe": 0.6205,
+      "n_trades": 14,
+      "interval": "15m"
+    },
+    "15m_20260417_1211": {
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 3.6559103447790102,
+        "trail_from_liq": 0.7497530408561407,
+        "cooldown_ticks": 4,
+        "momentum_window": 0,
+        "direction_penalty": 2.3461914650875677,
+        "margin_min": 11.866872750123747,
+        "freq_cap_hours": 11,
+        "freq_cap_max": 5
+      },
+      "total_pnl": 616.3005,
+      "win_rate": 0.8,
+      "max_dd": 6.65,
+      "sharpe": 0.921,
+      "n_trades": 15,
+      "interval": "15m"
+    },
+    "15m_20260417_1216": {
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 1.383245590128651,
+        "trail_from_liq": 0.5690862895047734,
+        "cooldown_ticks": 3,
+        "momentum_window": 0,
+        "direction_penalty": 1.3882186085947863,
+        "margin_min": 11.25343265637927,
+        "freq_cap_hours": 9,
+        "freq_cap_max": 5
+      },
+      "total_pnl": 604.1414,
+      "win_rate": 0.75,
+      "max_dd": 3.18,
+      "sharpe": 0.8183,
+      "n_trades": 16,
+      "interval": "15m"
+    },
+    "15m_20260417_1218": {
+      "params": {
+        "min_score": 24,
+        "min_vol_m": 3.6431925150769993,
+        "trail_from_liq": 0.565315944060254,
+        "cooldown_ticks": 3,
+        "momentum_window": 0,
+        "direction_penalty": 2.075081389649303,
+        "margin_min": 14.413386559808222,
+        "freq_cap_hours": 8,
+        "freq_cap_max": 8
+      },
+      "total_pnl": 611.0846,
+      "win_rate": 0.75,
+      "max_dd": 5.49,
+      "sharpe": 0.8391,
+      "n_trades": 16,
+      "interval": "15m"
+    },
+    "15m_20260417_1221": {
+      "params": {
+        "min_score": 23,
+        "min_vol_m": 2.8808526211643546,
+        "trail_from_liq": 0.6353273741821095,
+        "cooldown_ticks": 3,
+        "momentum_window": 2,
+        "direction_penalty": 2.341771399444134,
+        "margin_min": 12.312753004642977,
+        "freq_cap_hours": 10,
+        "freq_cap_max": 5
+      },
+      "total_pnl": 547.9533,
+      "win_rate": 0.6471,
+      "max_dd": 8.05,
+      "sharpe": 0.6574,
+      "n_trades": 17,
+      "interval": "15m"
+    },
+    "15m_20260417_1223": {
+      "params": {
+        "min_score": 22,
+        "min_vol_m": 3.8802717448712363,
+        "trail_from_liq": 0.6967234414385017,
+        "cooldown_ticks": 6,
+        "momentum_window": 3,
+        "direction_penalty": 0.15274460158600106,
+        "margin_min": 13.744654711020408,
+        "freq_cap_hours": 2,
+        "freq_cap_max": 7
+      },
+      "total_pnl": 486.63,
+      "win_rate": 0.6842,
+      "max_dd": 9.45,
+      "sharpe": 0.5147,
+      "n_trades": 19,
+      "interval": "15m"
+    },
+    "15m_20260417_1313": {
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.767471976037001,
+        "trail_from_liq": 0.5852868092130703,
+        "cooldown_ticks": 3,
+        "momentum_window": 1,
+        "direction_penalty": 2.7423494823685983,
+        "margin_min": 63.21517112504443,
+        "freq_cap_hours": 8,
+        "freq_cap_max": 2
+      },
+      "total_pnl": 679.9572,
+      "win_rate": 0.5938,
+      "max_dd": 7.91,
+      "sharpe": 0.5261,
+      "n_trades": 32,
       "interval": "15m"
     }
   }
