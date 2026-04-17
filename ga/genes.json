@@ -3,26 +3,26 @@
     "interval": "15m",
     "params": {
       "min_score": 20,
-      "min_vol_m": 2.767471976037001,
-      "trail_from_liq": 0.5852868092130703,
-      "cooldown_ticks": 3,
-      "momentum_window": 1,
-      "direction_penalty": 2.7423494823685983,
-      "margin_min": 63.21517112504443,
-      "freq_cap_hours": 8,
-      "freq_cap_max": 2
+      "min_vol_m": 2.0992752689681113,
+      "trail_from_liq": 0.3810424987325213,
+      "cooldown_ticks": 7,
+      "momentum_window": 3,
+      "direction_penalty": 0.0957457268826908,
+      "margin_min": 54.454785052267155,
+      "freq_cap_hours": 4,
+      "freq_cap_max": 12
     },
-    "total_pnl": 679.9572,
-    "win_rate": 0.5938,
-    "max_dd": 7.91,
-    "sharpe": 0.5261,
-    "n_trades": 32,
-    "timestamp": "2026-04-17T13:13:03.080155"
+    "total_pnl": 354.2416,
+    "win_rate": 0.6316,
+    "max_dd": 4.99,
+    "sharpe": 0.3804,
+    "n_trades": 38,
+    "timestamp": "2026-04-17T21:02:57.208255"
   },
   "optuna_study": {
     "n_trials": 200,
-    "elapsed_s": 98,
-    "best_value": 679.567638,
+    "elapsed_s": 336,
+    "best_value": 353.998416,
     "n_completed": 200
   },
   "history": {
@@ -386,6 +386,120 @@
       "max_dd": 7.91,
       "sharpe": 0.5261,
       "n_trades": 32,
+      "interval": "15m"
+    },
+    "15m_20260417_1952": {
+      "params": {
+        "min_score": 29,
+        "min_vol_m": 4.303334932058069,
+        "trail_from_liq": 0.5601291947630513,
+        "cooldown_ticks": 3,
+        "momentum_window": 1,
+        "direction_penalty": 2.2566534419304785,
+        "margin_min": 64.39415328688132,
+        "freq_cap_hours": 5,
+        "freq_cap_max": 8
+      },
+      "total_pnl": 403.6575,
+      "win_rate": 0.5294,
+      "max_dd": 4.98,
+      "sharpe": 0.5811,
+      "n_trades": 17,
+      "interval": "15m"
+    },
+    "15m_20260417_2014": {
+      "params": {
+        "min_score": 28,
+        "min_vol_m": 2.031020072175373,
+        "trail_from_liq": 0.718348956595235,
+        "cooldown_ticks": 3,
+        "momentum_window": 4,
+        "direction_penalty": 2.5098341463070137,
+        "margin_min": 58.047395194819075,
+        "freq_cap_hours": 6,
+        "freq_cap_max": 6
+      },
+      "total_pnl": 460.6102,
+      "win_rate": 0.7333,
+      "max_dd": 3.45,
+      "sharpe": 0.7825,
+      "n_trades": 15,
+      "interval": "15m"
+    },
+    "15m_20260417_2020": {
+      "params": {
+        "min_score": 30,
+        "min_vol_m": 4.7008397925478835,
+        "trail_from_liq": 0.6185047895148025,
+        "cooldown_ticks": 3,
+        "momentum_window": 3,
+        "direction_penalty": 2.1605191316851906,
+        "margin_min": 52.359500641063704,
+        "freq_cap_hours": 6,
+        "freq_cap_max": 4
+      },
+      "total_pnl": 382.872,
+      "win_rate": 0.6667,
+      "max_dd": 4.88,
+      "sharpe": 0.615,
+      "n_trades": 21,
+      "interval": "15m"
+    },
+    "15m_20260417_2033": {
+      "params": {
+        "min_score": 31,
+        "min_vol_m": 2.9127582710408917,
+        "trail_from_liq": 0.5971969441779763,
+        "cooldown_ticks": 3,
+        "momentum_window": 3,
+        "direction_penalty": 1.72539031709918,
+        "margin_min": 54.60081010403605,
+        "freq_cap_hours": 9,
+        "freq_cap_max": 9
+      },
+      "total_pnl": 428.6989,
+      "win_rate": 0.7619,
+      "max_dd": 4.88,
+      "sharpe": 0.7196,
+      "n_trades": 21,
+      "interval": "15m"
+    },
+    "15m_20260417_2041": {
+      "params": {
+        "min_score": 33,
+        "min_vol_m": 1.9687000170333797,
+        "trail_from_liq": 0.5313261936732544,
+        "cooldown_ticks": 3,
+        "momentum_window": 4,
+        "direction_penalty": 0.8754444057693426,
+        "margin_min": 54.10190649131854,
+        "freq_cap_hours": 9,
+        "freq_cap_max": 6
+      },
+      "total_pnl": 424.4466,
+      "win_rate": 0.7143,
+      "max_dd": 4.88,
+      "sharpe": 0.7026,
+      "n_trades": 21,
+      "interval": "15m"
+    },
+    "15m_20260417_2102": {
+      "params": {
+        "min_score": 20,
+        "min_vol_m": 2.0992752689681113,
+        "trail_from_liq": 0.3810424987325213,
+        "cooldown_ticks": 7,
+        "momentum_window": 3,
+        "direction_penalty": 0.0957457268826908,
+        "margin_min": 54.454785052267155,
+        "freq_cap_hours": 4,
+        "freq_cap_max": 12
+      },
+      "total_pnl": 354.2416,
+      "win_rate": 0.6316,
+      "max_dd": 4.99,
+      "sharpe": 0.3804,
+      "n_trades": 38,
       "interval": "15m"
     }
   }

@@ -1,1 +1,213 @@
-[]
+{
+  "best_params": {
+    "min_score": 70,
+    "sl_pct": 8.74569090099545,
+    "tp_pct": 14.384899222523273,
+    "cooldown_minutes": 104.52338036078011
+  },
+  "best_result": {
+    "total_pnl": 113.1297,
+    "n_trades": 39,
+    "win_rate": 0.6923,
+    "n_coins_scored": 34,
+    "avg_pnl_per_coin": 0.7542,
+    "max_dd": 3.42,
+    "signal_stats": {
+      "mean_reversion_short": {
+        "pnl": -8.1211,
+        "trades": 3,
+        "wins": 0,
+        "win_rate": 0.0,
+        "avg_pnl": -2.707
+      },
+      "mean_reversion_long": {
+        "pnl": 6.457,
+        "trades": 1,
+        "wins": 1,
+        "win_rate": 1.0,
+        "avg_pnl": 6.457
+      },
+      "trend_follow_long": {
+        "pnl": 126.6489,
+        "trades": 32,
+        "wins": 26,
+        "win_rate": 0.8125,
+        "avg_pnl": 3.9578
+      },
+      "trend_follow_short": {
+        "pnl": -11.8554,
+        "trades": 3,
+        "wins": 0,
+        "win_rate": 0.0,
+        "avg_pnl": -3.9518
+      }
+    },
+    "worst_trades": [
+      {
+        "coin": "ALT",
+        "side": "short",
+        "pnl": -3.9518,
+        "reason": "sl",
+        "score": 80,
+        "signal_type": "mean_reversion_short"
+      },
+      {
+        "coin": "BTC",
+        "side": "short",
+        "pnl": -3.9518,
+        "reason": "sl",
+        "score": 85,
+        "signal_type": "trend_follow_short"
+      },
+      {
+        "coin": "GRIFFAIN",
+        "side": "long",
+        "pnl": -3.9518,
+        "reason": "sl",
+        "score": 85,
+        "signal_type": "trend_follow_long"
+      },
+      {
+        "coin": "MON",
+        "side": "short",
+        "pnl": -3.9518,
+        "reason": "sl",
+        "score": 80,
+        "signal_type": "mean_reversion_short"
+      },
+      {
+        "coin": "WLD",
+        "side": "short",
+        "pnl": -3.9518,
+        "reason": "sl",
+        "score": 85,
+        "signal_type": "trend_follow_short"
+      }
+    ]
+  },
+  "n_trials": 200,
+  "elapsed_s": 67,
+  "top_10": [
+    {
+      "total_pnl": 113.1297,
+      "win_rate": 0.6923,
+      "n_trades": 39,
+      "max_dd": 3.42,
+      "params": {
+        "min_score": 70,
+        "sl_pct": 8.74569090099545,
+        "tp_pct": 14.384899222523273,
+        "cooldown_minutes": 104.52338036078011
+      }
+    },
+    {
+      "total_pnl": 112.7415,
+      "win_rate": 0.6923,
+      "n_trades": 39,
+      "max_dd": 3.49,
+      "params": {
+        "min_score": 75,
+        "sl_pct": 8.91174966289854,
+        "tp_pct": 14.392335428932206,
+        "cooldown_minutes": 79.90513643642885
+      }
+    },
+    {
+      "total_pnl": 112.6634,
+      "win_rate": 0.6923,
+      "n_trades": 39,
+      "max_dd": 3.5,
+      "params": {
+        "min_score": 72,
+        "sl_pct": 8.931865831476303,
+        "tp_pct": 14.389399879132192,
+        "cooldown_minutes": 109.68946263428428
+      }
+    },
+    {
+      "total_pnl": 112.5986,
+      "win_rate": 0.6923,
+      "n_trades": 39,
+      "max_dd": 3.54,
+      "params": {
+        "min_score": 68,
+        "sl_pct": 9.035522136009142,
+        "tp_pct": 14.34440227112322,
+        "cooldown_minutes": 123.9084374119609
+      }
+    },
+    {
+      "total_pnl": 111.6649,
+      "win_rate": 0.6923,
+      "n_trades": 39,
+      "max_dd": 3.65,
+      "params": {
+        "min_score": 75,
+        "sl_pct": 9.293087392262885,
+        "tp_pct": 14.377017981924299,
+        "cooldown_minutes": 134.31640539011164
+      }
+    },
+    {
+      "total_pnl": 108.828,
+      "win_rate": 0.65,
+      "n_trades": 40,
+      "max_dd": 3.09,
+      "params": {
+        "min_score": 75,
+        "sl_pct": 7.922677019163748,
+        "tp_pct": 14.372649439671195,
+        "cooldown_minutes": 73.14209389472562
+      }
+    },
+    {
+      "total_pnl": 107.0319,
+      "win_rate": 0.675,
+      "n_trades": 40,
+      "max_dd": 3.43,
+      "params": {
+        "min_score": 74,
+        "sl_pct": 8.754194755970355,
+        "tp_pct": 14.424080838224041,
+        "cooldown_minutes": 120.8684797300833
+      }
+    },
+    {
+      "total_pnl": 106.839,
+      "win_rate": 0.6667,
+      "n_trades": 39,
+      "max_dd": 3.24,
+      "params": {
+        "min_score": 75,
+        "sl_pct": 8.644638714957207,
+        "tp_pct": 14.742114360789065,
+        "cooldown_minutes": 68.36965125602688
+      }
+    },
+    {
+      "total_pnl": 106.6417,
+      "win_rate": 0.6667,
+      "n_trades": 39,
+      "max_dd": 3.25,
+      "params": {
+        "min_score": 72,
+        "sl_pct": 8.671894792465485,
+        "tp_pct": 14.727548127339084,
+        "cooldown_minutes": 88.72353027341525
+      }
+    },
+    {
+      "total_pnl": 106.5735,
+      "win_rate": 0.6667,
+      "n_trades": 39,
+      "max_dd": 3.25,
+      "params": {
+        "min_score": 72,
+        "sl_pct": 8.673142714760738,
+        "tp_pct": 14.719137495611267,
+        "cooldown_minutes": 87.22371979757793
+      }
+    }
+  ],
+  "timestamp": "2026-04-16T22:48:05.143081"
+}

@@ -1,1 +1,49 @@
-{}
+{
+  "MERL": {
+    "hwm": 0.037749,
+    "partial_closed": false,
+    "open_ts": 1776341174.2560291,
+    "decay_consecutive": 1
+  },
+  "STBL": {
+    "hwm": 0.04279,
+    "partial_closed": false,
+    "open_ts": 1776341174.256036
+  },
+  "kNEIRO": {
+    "hwm": 0.14171,
+    "partial_closed": false,
+    "open_ts": 1776369859.0931294,
+    "decay_consecutive": 0
+  },
+  "DYDX": {
+    "hwm": 0.13954,
+    "partial_closed": false,
+    "open_ts": 1776392315.2133207,
+    "decay_consecutive": 1
+  },
+  "AIXBT": {
+    "hwm": 0.03196,
+    "partial_closed": false,
+    "open_ts": 1776399057.4390624,
+    "decay_consecutive": 1
+  },
+  "JUP": {
+    "hwm": 0.18369,
+    "partial_closed": false,
+    "open_ts": 1776401796.2433536,
+    "decay_consecutive": 0
+  },
+  "MORPHO": {
+    "hwm": 1.79125,
+    "partial_closed": false,
+    "open_ts": 1776403167.25944,
+    "decay_consecutive": 0
+  },
+  "BERA": {
+    "hwm": 0.44322,
+    "partial_closed": false,
+    "open_ts": 1776403167.259444,
+    "decay_consecutive": 0
+  }
+}
