@@ -2,28 +2,42 @@
   "best_result": {
     "interval": "15m",
     "params": {
-      "min_score": 20,
-      "min_vol_m": 2.0992752689681113,
-      "trail_from_liq": 0.3810424987325213,
-      "cooldown_ticks": 7,
-      "momentum_window": 3,
-      "direction_penalty": 0.0957457268826908,
-      "margin_min": 54.454785052267155,
-      "freq_cap_hours": 4,
-      "freq_cap_max": 12
+      "min_score": 30,
+      "min_vol_m": 1.4461695240384744,
+      "extreme_pct": 25.660375087831294,
+      "trail_from_liq": 0.3000902297343467,
+      "cooldown_ticks": 12,
+      "margin_min": 77.38843265575073,
+      "freq_cap_hours": 3,
+      "freq_cap_max": 11,
+      "dir_long_min_momentum": -0.4622879860506961,
+      "dir_long_max_rsi": 81,
+      "dir_long_max_pos_range": 0.8872407259111466,
+      "dir_long_chop_pct_threshold": 37,
+      "dir_mom_down": -10.270481179264207,
+      "dir_anti_top_pct2": 18,
+      "leak_min_vol_ratio": 4.409900090781781,
+      "leak_max_pct_5m": 6.439699605889364,
+      "leak_min_confirmation": 3,
+      "leak_bonus_weight": 2.1868873557017894,
+      "leak_overlap_pct": 31
     },
-    "total_pnl": 354.2416,
-    "win_rate": 0.6316,
-    "max_dd": 4.99,
-    "sharpe": 0.3804,
-    "n_trades": 38,
-    "timestamp": "2026-04-17T21:02:57.208255"
+    "total_pnl": 476.6654,
+    "win_rate": 0.8519,
+    "max_dd": 3.62,
+    "sharpe": 0.6772,
+    "n_trades": 27,
+    "n_wins": 23,
+    "trial": 2,
+    "note": "Optuna 20260418 Trial#2 \u2014 \u4f4eDD\u65b9\u6848 (3.6%), Wr=85%, Sharpe=0.68"
   },
   "optuna_study": {
     "n_trials": 200,
-    "elapsed_s": 336,
-    "best_value": 353.998416,
-    "n_completed": 200
+    "elapsed_s": 468,
+    "best_value": 501.662914,
+    "n_completed": 200,
+    "selected_trial": 2,
+    "selected_value": 476.6654
   },
   "history": {
     "5m_2026-04-16": {
@@ -501,6 +515,14 @@
       "sharpe": 0.3804,
       "n_trades": 38,
       "interval": "15m"
+    },
+    "15m_20260418_0156": {
+      "params": {},
+      "pnl": 454.0283,
+      "wr": 0.6792,
+      "sharpe": 0.3433,
+      "n_trades": 53,
+      "note": "15m \u00d7 8 candles (2h window) \u2014 new early pump detection"
     }
   }
 }

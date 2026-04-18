@@ -1,0 +1,204 @@
+[
+  {
+    "symbol": "ARIAUSDT",
+    "direction": "SHORT",
+    "score": 34,
+    "confidence": 76,
+    "pct_24h": -12.124,
+    "vol_24h": 0,
+    "signal_types": [
+      "extreme_funding",
+      "extreme_ls",
+      "ema_bearish_both",
+      "volume_leak_5m"
+    ],
+    "direction_signals": [
+      "ls_moderate_long",
+      "ls_falling",
+      "tf_agree_short"
+    ],
+    "reasons": [
+      "💰 极端费率 0.028%",
+      "😱 极端 L/S 2.22",
+      "📉 EMA(9/21) 双线死叉 → 做空共振",
+      "🔍 5m量泄露 10.8x 确认=3/7 (+10分)",
+      "📊 L/S 下降中→散户在离场",
+      "📉 双周期EMA死叉+MACD-0.55% → 做空确认"
+    ],
+    "momentum_1h": -3.44,
+    "momentum_15m": -4.18,
+    "rsi_1h": 24.8,
+    "funding_recent": 0.0275,
+    "oi_change": -3.9,
+    "ls_current": 2.22,
+    "volatility_1h": 1.98,
+    "timestamp": 1776516880,
+    "reviewed": false,
+    "review": {
+      "current_price": 0.0886,
+      "momentum_5m": -4.202,
+      "funding_rate": 0.00031192,
+      "current_oi": 69671019.0,
+      "orderbook": {
+        "spread_pct": 0.1131,
+        "top5_bid_qty": 96372.0,
+        "top5_ask_qty": 61492.0,
+        "ask_pressure": false,
+        "bid_support": true
+      },
+      "recent_trades": {
+        "count": 50,
+        "total_buy_volume_usd": 6.0,
+        "total_sell_volume_usd": 3702.4,
+        "buy_ratio": 0.002,
+        "latest_price": 0.0885,
+        "oldest_price": 0.0886,
+        "micro_momentum_pct": -0.113
+      },
+      "conflicts": [
+        "订单簿买盘托底明显，下方有较大挂单"
+      ],
+      "conflict_count": 1,
+      "suggestion": "CAUTION — 存在局部冲突，可降低仓位或等待确认"
+    }
+  },
+  {
+    "symbol": "APEUSDT",
+    "direction": "LONG",
+    "score": 38,
+    "confidence": 77,
+    "pct_24h": 11.688,
+    "vol_24h": 0,
+    "signal_types": [
+      "extreme_funding",
+      "extreme_ls",
+      "ema_bullish_both",
+      "volume_spike",
+      "volume_leak_5m",
+      "early_pump_volume_leak"
+    ],
+    "direction_signals": [
+      "ls_moderate_long",
+      "momentum_up",
+      "early_pump_long",
+      "tf_agree_long"
+    ],
+    "reasons": [
+      "💰 极端费率 -0.008%",
+      "😱 极端 L/S 2.23",
+      "📈 EMA(9/21) 双线金叉 → 做多共振",
+      "📢 放量异常 5.0x (+4分)",
+      "🔍 5m量泄露 7.8x 确认=4/7 (+10分)",
+      "🔥 量价泄露：近 1h 量35.7x + 已涨6.6% + 绪 K88%",
+      "⚡ 动量向上",
+      "🔥 爆拉预警：量价泄露 → 看多",
+      "📈 双周期EMA金叉+MACD+0.95% → 做多确认",
+      "🛑 RSI极端超买(1h=75, 15m=89) → 减少做多"
+    ],
+    "momentum_1h": 6.61,
+    "momentum_15m": 8.14,
+    "rsi_1h": 74.7,
+    "funding_recent": -0.0078,
+    "oi_change": 4.3,
+    "ls_current": 2.232,
+    "volatility_1h": 3.22,
+    "timestamp": 1776517260,
+    "reviewed": false,
+    "review": {
+      "current_price": 0.1178,
+      "momentum_5m": 6.665,
+      "funding_rate": -0.00030084,
+      "current_oi": 78714195.0,
+      "orderbook": {
+        "spread_pct": 0.0851,
+        "top5_bid_qty": 116327.0,
+        "top5_ask_qty": 91034.0,
+        "ask_pressure": false,
+        "bid_support": false
+      },
+      "recent_trades": {
+        "count": 50,
+        "total_buy_volume_usd": 1117.2,
+        "total_sell_volume_usd": 9255.9,
+        "buy_ratio": 0.108,
+        "latest_price": 0.1173,
+        "oldest_price": 0.1174,
+        "micro_momentum_pct": -0.085
+      },
+      "conflicts": [
+        "最近成交买方占比 11%，买盘疲软"
+      ],
+      "conflict_count": 1,
+      "suggestion": "CAUTION — 存在局部冲突，可降低仓位或等待确认"
+    }
+  },
+  {
+    "symbol": "API3USDT",
+    "direction": "LONG",
+    "score": 46.0,
+    "confidence": 94.0,
+    "pct_24h": 25.942,
+    "vol_24h": 0,
+    "signal_types": [
+      "extreme_move",
+      "high_vol",
+      "extreme_funding",
+      "oi_surge",
+      "ema_bullish_both",
+      "volume_spike",
+      "early_pump_volume_leak"
+    ],
+    "direction_signals": [
+      "funding_falling",
+      "early_pump_long",
+      "tf_agree_long"
+    ],
+    "reasons": [
+      "🚀 24h +25.9%",
+      "📈 波动率 6%",
+      "💰 极端费率 -0.116%",
+      "📦 OI +46%",
+      "📈 EMA(9/21) 双线金叉 → 做多共振",
+      "📢 放量异常 43.0x (+5分)",
+      "🔥 量价泄露：近 1h 量2.7x + 已涨8.1% + 绪 K50%",
+      "📈 费率下降趋势→空头挤压",
+      "🔥 爆拉预警：量价泄露 → 看多",
+      "📈 双周期EMA金叉+MACD+2.27% → 做多确认",
+      "🛑 RSI极端超买(1h=86, 15m=80) → 减少做多"
+    ],
+    "momentum_1h": 19.54,
+    "momentum_15m": -1.34,
+    "rsi_1h": 86.0,
+    "funding_recent": -0.1156,
+    "oi_change": 46.1,
+    "ls_current": 1.667,
+    "volatility_1h": 5.94,
+    "timestamp": 1776518959,
+    "reviewed": false,
+    "review": {
+      "current_price": 0.3937,
+      "momentum_5m": 1.937,
+      "funding_rate": -0.00865775,
+      "current_oi": 13800177.8,
+      "orderbook": {
+        "spread_pct": 0.0254,
+        "top5_bid_qty": 13473.7,
+        "top5_ask_qty": 7998.6,
+        "ask_pressure": false,
+        "bid_support": true
+      },
+      "recent_trades": {
+        "count": 50,
+        "total_buy_volume_usd": 4684.7,
+        "total_sell_volume_usd": 1129.9,
+        "buy_ratio": 0.806,
+        "latest_price": 0.3931,
+        "oldest_price": 0.3928,
+        "micro_momentum_pct": 0.076
+      },
+      "conflicts": [],
+      "conflict_count": 0,
+      "suggestion": "OK — 实时数据与信号方向一致，可以入场"
+    }
+  }
+]

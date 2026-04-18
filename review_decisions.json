@@ -1,0 +1,29 @@
+[
+  {
+    "symbol": "ARIAUSDT",
+    "direction": "SHORT",
+    "decision": "SKIP",
+    "reason": "Score too low: 34 < 50",
+    "score": 34,
+    "confidence": 76,
+    "pct_24h": -12.124
+  },
+  {
+    "symbol": "APEUSDT",
+    "direction": "LONG",
+    "decision": "CAUTION",
+    "reason": "LONG signal but recent trades buy_ratio=10.8% (weak buying pressure)",
+    "score": 38,
+    "confidence": 77,
+    "pct_24h": 11.688
+  },
+  {
+    "symbol": "API3USDT",
+    "direction": "LONG",
+    "decision": "SKIP",
+    "reason": "Score too low: 46.0 < 50",
+    "score": 46.0,
+    "confidence": 94.0,
+    "pct_24h": 25.942
+  }
+]
